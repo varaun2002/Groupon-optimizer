@@ -1,0 +1,36 @@
+# Groupon Deal URLs — 20 real service deals
+# Format: URL  # slug-name | city | category | notes
+
+# ── CHICAGO — Spa & Wellness ───────────────────────────────────────────
+https://www.groupon.com/deals/king-spa-and-sauna-chicago-35          # king-spa-chicago | Chicago | spa-wellness | strong: high-rated Korean spa
+https://www.groupon.com/deals/touyuantang-spa                         # touyuantang-spa | Chicago | spa-wellness
+https://www.groupon.com/deals/leaf-spa-at-the-fairmont               # leaf-spa-fairmont | Chicago | spa-wellness | strong: luxury hotel spa
+https://www.groupon.com/deals/heavenly-massage-12                    # heavenly-massage-chicago | Chicago | spa-wellness
+https://www.groupon.com/deals/pure-serenity-spa-1                    # pure-serenity-spa | Chicago | spa-wellness | weak: sparse description
+
+# ── CHICAGO — Health & Activities ─────────────────────────────────────
+https://www.groupon.com/deals/wateriders-kayak-tours-kingsbury-location  # wateriders-kayak-chicago | Chicago | activities-tours | strong: 500+ sold
+https://www.groupon.com/deals/105f-yoga                               # 105f-yoga-chicago | Chicago | health-fitness
+https://www.groupon.com/deals/whole-health-network-1-7               # whole-health-network | Chicago | health-fitness | weak: suspicious service
+
+# ── CHICAGO — Automotive ───────────────────────────────────────────────
+https://www.groupon.com/deals/valvoline-instant-oil-change-63        # valvoline-oil-change | Chicago | automotive | strong: national brand
+https://www.groupon.com/deals/clean-wave-car-wash                    # clean-wave-car-wash | Chicago | automotive
+
+# ── NEW YORK CITY — Beauty & Spa ──────────────────────────────────────
+https://www.groupon.com/deals/bared-monkey-laser-spa-11-14           # bared-monkey-laser-nyc | New York City | health-beauty | strong: 500+ sold
+https://www.groupon.com/deals/spa-next-inc                            # spa-next-nyc | New York City | spa-wellness
+https://www.groupon.com/deals/icon-microblading-spa                  # icon-microblading-nyc | New York City | health-beauty
+https://www.groupon.com/deals/ngm-spa-1                              # ngm-spa-nyc | New York City | spa-wellness | weak: low review count expected
+
+# ── LOS ANGELES — Beauty & Spa ────────────────────────────────────────
+https://www.groupon.com/deals/awe-spa-1-7                            # awe-spa-la | Los Angeles | spa-wellness | strong: couples massage
+https://www.groupon.com/deals/harmony-day-spa-11                     # harmony-day-spa-la | Los Angeles | spa-wellness
+https://www.groupon.com/deals/navi-skincare-1                        # navi-skincare-la | Los Angeles | health-beauty | weak: low rating possible
+
+# ── LOS ANGELES — Activities ──────────────────────────────────────────
+https://www.groupon.com/deals/gl-the-catalina-flyer-6               # catalina-flyer-la | Los Angeles | activities-tours | strong: iconic attraction
+https://www.groupon.com/deals/lucky-strike-corp-2024-bowling-fall   # lucky-strike-bowling-la | Los Angeles | activities-tours
+
+# ── LOS ANGELES — Automotive ──────────────────────────────────────────
+https://www.groupon.com/deals/rivera-s-auto-detail-2                # riveras-auto-detail-la | Los Angeles | automotive

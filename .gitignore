@@ -1,0 +1,14 @@
+.env
+groupon.duckdb
+groupon.duckdb.wal
+__pycache__/
+*.py[cod]
+.playwright/
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.log
+.DS_Store
+output/
