@@ -24,14 +24,14 @@ The `script_count` field across all 19 valid scrapes ranged from 196 to 204 scri
 **4. 6 of 20 deals are missing FAQPage schema — including both automotive deals and 4 service deals.**
 Valvoline, Rivera's Auto Detail, Whole Health Network, NGM Spa, and Icon Microblading all lack FAQPage structured data. The deals that have it (14/20) consistently have 3–8 FAQ entries extracted. FAQPage schema enables Google to display Q&A pairs directly in search results — its absence on automotive deals is especially surprising since "does Valvoline do synthetic oil?" is a high-volume search query that could be captured with a single schema addition.
 
-**5. The pipeline successfully generated AI proposals even for the 1 deal that completely failed to scrape (Catalina Island Ferry).**
-When Playwright timed out on the Catalina Ferry deal, the pipeline gracefully continued — passing the stub `DealAudit` through research and all three AI stages. The resulting proposal used URL metadata and category context to generate 5 priority recommendations anyway, demonstrating that the error-isolation architecture works end-to-end. The Catalina failure was the only scrape failure across all 20 deals (95% success rate).
+**5. Playwright timeout behavior exposed a real data-completeness tradeoff in the scraper fallback.**
+The Catalina Island Ferry deal initially caused Playwright to hang waiting for `networkidle` — a state the page never reaches due to its 200+ background scripts. Increasing the timeout to 60 seconds and adding a `domcontentloaded` retry with a 6-second post-load wait resolved this: the deal now scrapes fully (2 pricing tiers, 10 highlights, 4 FAQs, city Newport Beach). The incident revealed that Groupon pages vary widely in JS load behavior, and a static timeout threshold isn't reliable — a smarter retry strategy (e.g., bail on networkidle after N seconds, always fall through to domcontentloaded) would be more robust across the full catalog.
 
 ## What I Would Improve With More Time
 
 1. **Render-side scraping by default** — Groupon increasingly gates pricing data behind JavaScript rendering. Moving to Playwright-first (instead of fallback) would improve data completeness across all 20 deals, especially for pricing_options extraction.
 
-2. **Yelp Fusion API integration with paid key** — The scrape-based Yelp fallback is rate-limited and returns incomplete data. A Yelp API key would unlock structured business data (exact ratings, review counts, price tiers) for every competitor comparison.
+2. **Yelp review text via alternative source** — Yelp deprecated their public reviews API in March 2022 (returns 404) and blocks all headless browser clients. The pipeline currently extracts customer quote snippets from SerpAPI results (TripAdvisor, Reddit, Google snippets) as a substitute. A direct partnership-level Yelp data feed would give richer, more structured review text for sentiment clustering.
 
 3. **Review sentiment NLP** — Instead of extracting review quotes verbatim, a lightweight NLP pass (using Claude Haiku) could cluster recurring complaints and praises into themes per category, enabling cross-deal pattern analysis.
 

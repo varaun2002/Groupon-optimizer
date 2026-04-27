@@ -1,0 +1,146 @@
+{
+  "url": "https://www.groupon.com/deals/rivera-s-auto-detail-2",
+  "slug": "rivera-s-auto-detail-2",
+  "title": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
+  "subtitle": null,
+  "merchant_name": "RIVERA'S Auto Detail",
+  "city": "",
+  "category": "Auto Detailing",
+  "pricing_options": [
+    {
+      "name": "Interior and Exterior Detail for Sedan or Coupe",
+      "original_price": 150.0,
+      "deal_price": 108.0,
+      "discount_pct": 28.0,
+      "savings": 42.0,
+      "coupon_code": "TOPDEALS",
+      "coupon_price": 97.2
+    },
+    {
+      "name": "Interior and Exterior Detail for Small SUV, PIckup Truck or Crossover",
+      "original_price": 250.0,
+      "deal_price": 180.0,
+      "discount_pct": 28.0,
+      "savings": 70.0,
+      "coupon_code": "TOPDEALS",
+      "coupon_price": 162.0
+    },
+    {
+      "name": "Interior and Exterior Detail for Large SUV, Minivan or Extended Pickup",
+      "original_price": 350.0,
+      "deal_price": 198.0,
+      "discount_pct": 43.0,
+      "savings": 152.0,
+      "coupon_code": "TOPDEALS",
+      "coupon_price": 178.2
+    }
+  ],
+  "highlights": [
+    "Need To Know Info",
+    "Interior and Exterior Detail for Sedan or Coupe:A complete clean-up inside and out specifically tailored for smaller vehicles, ensuring every inch shines.",
+    "Interior and Exterior Detail for Small SUV, Pickup Truck or Crossover:Comprehensive detailing service suited for mid-sized vehicles, delivering a pristine finish and refreshed appearance.",
+    "Interior and Exterior Detail for Large SUV, Minivan or Extended Pickup:Extensive detailing ensuring larger vehicles look their absolute best, transforming their overall aesthetic.",
+    "Auto Detailing"
+  ],
+  "fine_print": [],
+  "faqs": [],
+  "images": {
+    "count": 26,
+    "alt_texts": [
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Primary Image",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 2",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 3",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 4",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 5",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 6",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 7",
+      "Daily Views Icon",
+      "Daily Views Icon",
+      "Up to 51% Off Detailing at Cannon Collision",
+      "Up to 41% Off on Exterior & Interior Car Detail",
+      "Interior and Exterior Wash for a Sedan or SUV by Skilled Professionals",
+      "Exterior & Interior Car Detail at Royal Touch Hand Wash",
+      "Full Interior or Exterior Car Detail or Both or Ceramic Coating",
+      "Full Interior & Exterior Auto Detailing",
+      "$25 For $50 Toward Car Wash & Detailing Service",
+      "Interior Car Detailing for Sedan, SUV or Large 3-Row SUV",
+      "Get a complete car detailing for coupes, sedans, or larger vehicles",
+      "Up to 19% Off Car Detailing at Dr. Detail",
+      "Interior & Exterior Detailing for Sedans, SUVs & Trucks"
+    ],
+    "quality_assessment": "26 images with generic alt_texts that mostly repeat the title rather than describing actual content. Alt texts like 'Image 2', 'Image 3' lack descriptive value. However, count of 26 images demonstrates visual commitment. Quality is compromised by non-descriptive alt_texts that don't highlight vehicle transformation, equipment, or team expertise."
+  },
+  "script_count": 200,
+  "stylesheet_count": 3,
+  "mobile_viewport_meta": "width=device-width",
+  "reviews": [
+    {
+      "rating": null,
+      "text": "Amazing job! Giovanni coming to my location was super helpful inconvenient. He brought everything needed, so I really didn’t have to worry about anything. He took his time and made sure to do a good job. I really appreciate the work he did. Thank you sooooo much! Read More",
+      "date": "4 days ago",
+      "author": "Sierra"
+    },
+    {
+      "rating": null,
+      "text": "Responded quickly for booking. Great Service. Happy Customer",
+      "date": "6 days ago",
+      "author": "Cinddy"
+    },
+    {
+      "rating": null,
+      "text": "The original time estimate was 2 hours for full detail of an SUV.  He took a full 4 hours to complete the job, without any additional charge.  The SUV looked great.",
+      "date": "7 days ago",
+      "author": "Martin"
+    },
+    {
+      "rating": null,
+      "text": "My car looks better than I expected.  They had a quick response time and communicated timely.  They showed up early and took plenty of time to make my car look amazing! Read More",
+      "date": "1 year ago",
+      "author": "Syndee"
+    },
+    {
+      "rating": null,
+      "text": "Excellent work!  Very nice and professional and exceeded expectations.",
+      "date": "1 year ago",
+      "author": "Daniel"
+    }
+  ],
+  "seo": {
+    "meta_title": "RIVERA'S Auto Detail - From $108 | Groupon",
+    "meta_description": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
+    "h1": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
+    "h2s": [
+      "Interior and Exterior Detail for Sedan or Coupe",
+      "Interior and Exterior Detail for Small SUV, PIckup Truck or Crossover",
+      "Interior and Exterior Detail for Large SUV, Minivan or Extended Pickup",
+      "Need To Know Info",
+      "About RIVERA'S Auto Detail",
+      "Customer Reviews",
+      "Explore more",
+      "Similar deals"
+    ],
+    "schema_types": [
+      "BreadcrumbList",
+      "Organization",
+      "ProductGroup",
+      "WebSite"
+    ],
+    "canonical_url": "https://www.groupon.com/deals/rivera-s-auto-detail-2"
+  },
+  "trust_signals": {
+    "review_count": 7,
+    "avg_rating": 4.4,
+    "num_sold": "10+ bought",
+    "has_guarantee": true,
+    "badges": [
+      "Popular Gift"
+    ]
+  },
+  "urgency": {
+    "has_countdown": true,
+    "limited_quantity_text": "Extra $12 off, today only",
+    "selling_fast": false
+  },
+  "raw_html_length": 1350622,
+  "scraped_at": "2026-04-27T04:06:20.432821+00:00"
+}

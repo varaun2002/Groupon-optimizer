@@ -77,7 +77,8 @@ def _write_outputs(
         deal = f"${opt.deal_price:.2f}" if opt.deal_price else "N/A"
         disc = f"{opt.discount_pct:.0f}%" if opt.discount_pct else "N/A"
         sav = f"${opt.savings:.2f}" if opt.savings else "N/A"
-        pricing_rows += f"| {opt.name} | {orig} | {deal} | {disc} | {sav} |\n"
+        coupon = f"${opt.coupon_price:.2f} (code: {opt.coupon_code})" if opt.coupon_price and opt.coupon_code else ("N/A" if not opt.coupon_price else f"${opt.coupon_price:.2f}")
+        pricing_rows += f"| {opt.name} | {orig} | {deal} | {disc} | {sav} | {coupon} |\n"
 
     highlights_md = "\n".join(f"- {h}" for h in audit.highlights) or "- No highlights extracted"
     fine_print_md = "\n".join(f"- {fp}" for fp in audit.fine_print) or "- No fine print extracted"
@@ -123,9 +124,9 @@ def _write_outputs(
 
 ## Pricing Options
 
-| Option | Original | Deal Price | Discount | Savings |
-|--------|----------|------------|----------|---------|
-{pricing_rows or "| No pricing extracted | — | — | — | — |\n"}
+| Option | Original | Deal Price | Discount | Savings | Coupon |
+|--------|----------|------------|----------|---------|--------|
+{pricing_rows or "| No pricing extracted | — | — | — | — | — |\n"}
 
 ## What You Get
 
@@ -339,6 +340,11 @@ def _process_deal(url: str, output_dir: Path, store) -> bool:
     try:
         console.print(f"  [cyan]AI audit analysis[/cyan] {slug}...")
         analysis = analyze_audit(audit)
+        # Backfill quality_assessment into audit so audit.json contains it
+        img_qa = analysis.get("image_quality_assessment", "")
+        if img_qa:
+            audit.images.quality_assessment = img_qa
+            store.save_audit(audit)  # re-save with quality_assessment populated
         steps["ai_audit"] = "✓"
     except Exception as e:
         logger.error("AI audit analysis failed %s: %s", url, e, exc_info=True)

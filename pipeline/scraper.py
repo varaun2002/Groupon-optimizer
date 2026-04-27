@@ -58,10 +58,10 @@ def _city_from_url(url: str) -> str:
 def _parse_price(text: str) -> float | None:
     if not text:
         return None
-    match = re.search(r"\$?([\d,]+(?:\.\d{1,2})?)", text.replace(",", ""))
-    if match:
+    m = re.search(r"\$?([\d,]+(?:\.\d{1,2})?)", text.replace(",", ""))
+    if m:
         try:
-            return float(match.group(1))
+            return float(m.group(1))
         except ValueError:
             pass
     return None
@@ -70,60 +70,82 @@ def _parse_price(text: str) -> float | None:
 def _extract_pricing(soup: BeautifulSoup) -> list[PricingOption]:
     options: list[PricingOption] = []
 
-    # Try structured pricing blocks
-    price_blocks = soup.select("[class*='price'], [class*='Price'], [data-testid*='price']")
+    # Primary: Groupon uses data-testid='purchase-single-option-{uuid}' for each pricing tier.
+    # Within each block, sibling testids give us strike-through-price, green-price, discount.
+    option_blocks = soup.find_all(
+        attrs={"data-testid": re.compile(r"^purchase-single-option-")}
+    )
+    for block in option_blocks[:6]:
+        # Option name: first substantial text before prices
+        block_text = block.get_text(" ", strip=True)
+        # Name = text up to the first "$" sign
+        name_match = re.match(r"^(.+?)\s*\$", block_text)
+        name = name_match.group(1).strip()[:120] if name_match else "Deal"
 
-    # Try JSON-LD for offers
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string or "")
-            offers = data.get("offers", [])
-            if isinstance(offers, dict):
-                offers = [offers]
-            for offer in offers:
-                price = offer.get("price") or offer.get("lowPrice")
-                name = offer.get("name", "Deal")
-                opt = PricingOption(
-                    name=str(name),
-                    deal_price=float(price) if price else None,
-                )
-                options.append(opt)
-        except Exception:
-            pass
+        orig_el = block.find(attrs={"data-testid": "strike-through-price"})
+        sale_el = block.find(attrs={"data-testid": "limited-sale-price"})
+        deal_el = block.find(attrs={"data-testid": "green-price"})
+        disc_el = block.find(attrs={"data-testid": "discount"})
+        promo_el = block.find(attrs={"data-testid": "promotion-price"})
+
+        original_price = _parse_price(orig_el.get_text(strip=True) if orig_el else "")
+        # limited-sale-price is the actual checkout price (lowest); green-price is the pre-sale deal price
+        deal_price = _parse_price(sale_el.get_text(strip=True) if sale_el else "")
+        if not deal_price:
+            deal_price = _parse_price(deal_el.get_text(strip=True) if deal_el else "")
+        discount_pct = None
+        if disc_el:
+            m = re.search(r"(\d+)", disc_el.get_text(strip=True))
+            if m:
+                discount_pct = float(m.group(1))
+
+        # Coupon code: promotion-price element + sibling "with code XXXX" text
+        coupon_price = _parse_price(promo_el.get_text(strip=True) if promo_el else "")
+        coupon_code = None
+        if promo_el:
+            block_raw = block.get_text(" ", strip=True)
+            code_m = re.search(r"with\s+code\s+([A-Z0-9]+)", block_raw, re.IGNORECASE)
+            if code_m:
+                coupon_code = code_m.group(1).upper()
+
+        savings = None
+        if original_price and deal_price:
+            savings = round(original_price - deal_price, 2)
+        if original_price and deal_price and discount_pct is None:
+            discount_pct = round((savings / original_price) * 100, 1)
+
+        if deal_price or original_price:
+            options.append(PricingOption(
+                name=name,
+                original_price=original_price,
+                deal_price=deal_price,
+                discount_pct=discount_pct,
+                savings=savings,
+                coupon_code=coupon_code,
+                coupon_price=coupon_price,
+            ))
 
     if options:
-        return options[:5]
+        logger.info("Extracted %d pricing options via data-testid", len(options))
+        return options
 
-    # Fallback: look for price text patterns
+    # Fallback: parse from meta title "Merchant - From $XX.XX - City | Groupon"
+    title_tag = soup.find("title")
+    if title_tag:
+        m = re.search(r"From \$([\d,]+(?:\.\d{2})?)", title_tag.get_text())
+        if m:
+            deal_price = float(m.group(1).replace(",", ""))
+            options.append(PricingOption(name="Deal", deal_price=deal_price))
+            logger.info("Extracted deal price from meta title: $%s", deal_price)
+            return options
+
+    # Last resort: discount % from page text
     text = soup.get_text(" ", strip=True)
-    original_matches = re.findall(r"\$(\d+(?:\.\d{2})?)\s*(?:value|Value|original)", text)
-    deal_matches = re.findall(r"(?:now|Now|for)\s*\$(\d+(?:\.\d{2})?)", text)
-
-    if deal_matches:
-        deal_price = float(deal_matches[0])
-        orig_price = float(original_matches[0]) if original_matches else None
-        discount = None
-        savings = None
-        if orig_price and deal_price:
-            savings = orig_price - deal_price
-            discount = round((savings / orig_price) * 100, 1)
-        options.append(PricingOption(
-            name="Deal",
-            original_price=orig_price,
-            deal_price=deal_price,
-            discount_pct=discount,
-            savings=savings,
-        ))
-
-    # Also look for discount percentage in page
     pct_matches = re.findall(r"(\d+)%\s*off", text, re.IGNORECASE)
-    if pct_matches and not options:
-        options.append(PricingOption(
-            name="Deal",
-            discount_pct=float(pct_matches[0]),
-        ))
+    if pct_matches:
+        options.append(PricingOption(name="Deal", discount_pct=float(pct_matches[0])))
 
-    return options[:5]
+    return options[:6]
 
 
 def _extract_highlights(soup: BeautifulSoup) -> list[str]:
@@ -159,23 +181,23 @@ def _extract_highlights(soup: BeautifulSoup) -> list[str]:
 
 def _extract_fine_print(soup: BeautifulSoup) -> list[str]:
     fine_print: list[str] = []
-    selectors = [
-        "[class*='fine-print']",
-        "[class*='finePrint']",
-        "[class*='restrictions']",
-        "[class*='terms']",
-        "[id*='fine-print']",
-    ]
-    for sel in selectors:
-        for el in soup.select(sel):
-            for li in el.find_all("li"):
-                text = li.get_text(strip=True)
-                if text and text not in fine_print:
-                    fine_print.append(text)
-            if not fine_print:
-                text = el.get_text(" ", strip=True)
-                if text:
-                    fine_print.append(text[:500])
+
+    # Groupon places fine print in plain text after "Terms & Conditions" heading.
+    # No dedicated CSS class exists — parse from full page text.
+    full_text = soup.get_text(" ", strip=True)
+    m = re.search(
+        r"Terms\s*&\s*Conditions\s+(.*?)(?:Legal Disclosures|Show More|Groupon is not|$)",
+        full_text, re.DOTALL | re.IGNORECASE,
+    )
+    if m:
+        block = m.group(1).strip()
+        # Split into individual rules on ". " sentence boundaries
+        sentences = re.split(r"(?<=\.)\s+(?=[A-Z])", block)
+        for s in sentences:
+            s = s.strip()
+            if s and len(s) > 10:
+                fine_print.append(s)
+
     return fine_print[:10]
 
 
@@ -216,41 +238,36 @@ def _extract_faqs(soup: BeautifulSoup) -> list[FAQ]:
 
 def _extract_reviews(soup: BeautifulSoup) -> list[Review]:
     reviews: list[Review] = []
-    review_selectors = [
-        "[class*='review']",
-        "[class*='Review']",
-        "[itemprop='review']",
-    ]
-    for sel in review_selectors:
-        for el in soup.select(sel)[:10]:
-            text_el = el.find(class_=re.compile(r"text|body|comment", re.I))
-            rating_el = el.find(attrs={"itemprop": "ratingValue"}) or el.find(
-                class_=re.compile(r"rating|star", re.I)
-            )
-            author_el = el.find(attrs={"itemprop": "author"}) or el.find(
-                class_=re.compile(r"author|name|user", re.I)
-            )
-            date_el = el.find(attrs={"itemprop": "datePublished"}) or el.find("time")
 
-            text = text_el.get_text(strip=True) if text_el else el.get_text(strip=True)[:200]
-            rating_str = rating_el.get("content") or rating_el.get_text(strip=True) if rating_el else None
-            rating = None
-            if rating_str:
-                m = re.search(r"[\d.]+", rating_str)
-                if m:
-                    rating = float(m.group())
+    # Groupon uses data-testid='customer-review' for each review block.
+    for el in soup.find_all(attrs={"data-testid": "customer-review"})[:5]:
+        raw = el.get_text(" ", strip=True)
 
-            if text and len(text) > 10:
-                reviews.append(Review(
-                    rating=rating,
-                    text=text[:300],
-                    author=author_el.get_text(strip=True)[:50] if author_el else None,
-                    date=date_el.get("datetime") or date_el.get_text(strip=True)[:20] if date_el else None,
-                ))
-            if len(reviews) >= 5:
-                break
-        if reviews:
-            break
+        # Author is the first word(s) before "ratings|reviews|days ago"
+        author_m = re.match(r"^([A-Za-z][A-Za-z\s]{1,30}?)(?:\d|\s*Top)", raw)
+        author = author_m.group(1).strip() if author_m else None
+
+        # Date: "X days ago" / "X months ago"
+        date_m = re.search(r"(\d+\s+(?:day|days|month|months|year|years)\s+ago)", raw, re.IGNORECASE)
+        date = date_m.group(1) if date_m else None
+
+        # Review text: everything after the date
+        text = raw
+        if date:
+            idx = raw.find(date)
+            text = raw[idx + len(date):].strip()
+        elif author:
+            # Strip author + rating meta prefix
+            text = re.sub(r"^\S+\s+\d+\s+ratings?.*?\d+\s+reviews?\s*", "", raw, flags=re.IGNORECASE).strip()
+
+        if text and len(text) > 5:
+            reviews.append(Review(
+                rating=None,  # individual star not shown per review in DOM
+                text=text[:400],
+                author=author,
+                date=date,
+            ))
+
     return reviews
 
 
@@ -312,15 +329,37 @@ def _extract_trust_signals(soup: BeautifulSoup, text: str) -> TrustSignals:
     has_guarantee = False
     badges: list[str] = []
 
-    # Rating patterns
-    rating_match = re.search(r"(\d+\.?\d*)\s*(?:out of|/)\s*5", text)
-    if rating_match:
-        avg_rating = float(rating_match.group(1))
+    # Groupon exposes overall rating via data-testid='rating'
+    rating_el = soup.find(attrs={"data-testid": "rating"})
+    if rating_el:
+        try:
+            avg_rating = float(rating_el.get_text(strip=True))
+        except ValueError:
+            pass
 
-    # Review count
-    count_match = re.search(r"([\d,]+)\s*(?:review|rating)", text, re.IGNORECASE)
-    if count_match:
-        review_count = int(count_match.group(1).replace(",", ""))
+    def _parse_count(raw: str) -> int | None:
+        m = re.search(r"([\d.]+)\s*([KkMm]?)\+?", raw.replace(",", ""))
+        if not m:
+            return None
+        n = float(m.group(1))
+        suffix = m.group(2).upper()
+        if suffix == "K":
+            n *= 1000
+        elif suffix == "M":
+            n *= 1_000_000
+        return int(n)
+
+    # Review count: look for "X ratings" / "8K+ ratings" near the rating widget, then fall back to regex
+    if avg_rating is not None:
+        rating_ctx = rating_el.parent.get_text(" ", strip=True) if rating_el and rating_el.parent else ""
+        m = re.search(r"([\d.,]+[KkMm]?\+?)\s*ratings?", rating_ctx, re.IGNORECASE)
+        if m:
+            review_count = _parse_count(m.group(1))
+
+    if review_count is None:
+        m = re.search(r"([\d.,]+[KkMm]?\+?)\s*(?:ratings?|reviews?)", text, re.IGNORECASE)
+        if m:
+            review_count = _parse_count(m.group(1))
 
     # Sold count
     sold_match = re.search(r"([\d,]+\+?\s*(?:bought|sold|purchased))", text, re.IGNORECASE)
@@ -331,29 +370,38 @@ def _extract_trust_signals(soup: BeautifulSoup, text: str) -> TrustSignals:
     if re.search(r"guarantee|money.back|refund", text, re.IGNORECASE):
         has_guarantee = True
 
-    # Badges from structured data
-    badge_els = soup.select("[class*='badge'], [class*='Badge'], [class*='award']")
-    for el in badge_els:
-        b = el.get_text(strip=True)
-        if b and len(b) < 50:
-            badges.append(b)
+    # Badges: data-testid='desktop-deal-badges'
+    badge_el = soup.find(attrs={"data-testid": "desktop-deal-badges"})
+    if badge_el:
+        raw = badge_el.get_text(" ", strip=True)
+        # Split on capitals (e.g. "Best RatedPopular Gift" → ["Best Rated", "Popular Gift"])
+        parts = re.findall(r"[A-Z][a-z]+(?:\s+[A-Za-z]+)*", raw)
+        badges = [p.strip() for p in parts if p.strip()][:5]
 
     return TrustSignals(
         review_count=review_count,
         avg_rating=avg_rating,
         num_sold=num_sold,
         has_guarantee=has_guarantee,
-        badges=badges[:5],
+        badges=badges,
     )
 
 
 def _extract_urgency(soup: BeautifulSoup, text: str) -> UrgencyElements:
-    has_countdown = bool(soup.find(class_=re.compile(r"countdown|timer|clock", re.I)))
+    # data-testid='sale-countdown' is the live timer element
+    has_countdown = bool(soup.find(attrs={"data-testid": "sale-countdown"}))
+
+    # Limited sale label: "Extra $X off, today only" or "Limited time"
     limited_qty = None
-    m = re.search(r"((?:only\s+)?\d+\s+(?:left|remaining|available))", text, re.IGNORECASE)
-    if m:
-        limited_qty = m.group(1)
-    selling_fast = bool(re.search(r"selling fast|almost gone|high demand", text, re.IGNORECASE))
+    label_els = soup.find_all(attrs={"data-testid": "limited-sale-label"})
+    if label_els:
+        limited_qty = label_els[0].get_text(strip=True)
+
+    # "Selling Fast" badge
+    selling_fast = bool(
+        soup.find(attrs={"data-testid": re.compile(r"selling.fast", re.I)})
+        or re.search(r"selling fast|almost gone|high demand", text, re.IGNORECASE)
+    )
     return UrgencyElements(
         has_countdown=has_countdown,
         limited_quantity_text=limited_qty,
@@ -379,61 +427,60 @@ def _parse_html(url: str, html: str) -> DealAudit:
     if sub_el:
         subtitle = sub_el.get_text(strip=True)[:200]
 
-    # Merchant name — look in structured data first, then breadcrumbs, then page metadata
+    # Merchant name — most reliable source is meta title: "Merchant - From $XX - City | Groupon"
     merchant = ""
-    # Try JSON-LD for seller/provider name
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string or "")
-            for key in ("seller", "provider", "brand", "manufacturer"):
-                val = data.get(key)
-                if isinstance(val, dict):
-                    name = val.get("name", "")
-                    if name and len(name) < 80:
-                        merchant = name
-                        break
-                elif isinstance(val, str) and len(val) < 80:
-                    merchant = val
-                    break
-        except Exception:
-            pass
-        if merchant:
-            break
+    title_tag = soup.find("title")
+    if title_tag:
+        parts = title_tag.get_text(strip=True).split(" - ")
+        if parts and len(parts[0]) > 2:
+            merchant = parts[0].strip()[:80]
 
-    if not merchant:
-        # Try structured merchant-specific selectors
-        for sel in ["[class*='merchant-name']", "[class*='merchantName']",
-                    "[class*='provider-name']", "[data-testid*='merchant']"]:
-            el = soup.select_one(sel)
-            if el:
-                t = el.get_text(strip=True)
-                if t and 2 < len(t) < 80:
-                    merchant = t
-                    break
+    # Fallback: "at MerchantName" pattern in H1
+    if not merchant and h1:
+        at_m = re.search(r"\bat\s+([A-Z][A-Za-z0-9\s&']+?)(?:\s*[\(:]|$)", h1.get_text(strip=True))
+        if at_m:
+            merchant = at_m.group(1).strip()[:80]
 
-    if not merchant:
-        # Try breadcrumb: last item before deal title
-        breadcrumbs = soup.select("[class*='breadcrumb'] a, nav[aria-label*='breadcrumb'] a")
-        for b in reversed(breadcrumbs):
-            bt = b.get_text(strip=True)
-            if bt and 2 < len(bt) < 60 and "groupon" not in bt.lower():
-                merchant = bt
-                break
-
-    # City from URL slug or breadcrumb
-    city = _city_from_url(url)
+    # City — parse from data-testid='dealLocationsList' address text, or meta title fallback.
+    # Meta title format: "Merchant Name - From $XX - City | Groupon"
+    city = ""
+    loc_el = soup.find(attrs={"data-testid": "dealLocationsList"})
+    if loc_el:
+        loc_text = loc_el.get_text(" ", strip=True)
+        # Address usually contains "City" — extract last city-like token before state abbreviation
+        city_m = re.search(r",\s*([A-Za-z\s]+),\s*[A-Z]{2}\b", loc_text)
+        if city_m:
+            city = city_m.group(1).strip()
     if not city:
-        breadcrumb = soup.select("[class*='breadcrumb'] a, nav a")
-        for b in breadcrumb:
-            bt = b.get_text(strip=True)
-            if bt and len(bt) < 30:
-                city = bt
+        title_tag = soup.find("title")
+        if title_tag:
+            # "Merchant - From $XX - Chicago | Groupon"
+            city_m = re.search(r"-\s*([A-Za-z\s]+)\s*\|\s*Groupon", title_tag.get_text())
+            if city_m:
+                city = city_m.group(1).strip()
+    if not city:
+        city = _city_from_url(url)
+    # Final fallback: scan full page text for "Street, City, ST ZIP" address patterns
+    if not city:
+        addr_m = re.search(r",\s*([A-Za-z][A-Za-z\s]{2,20}),\s*[A-Z]{2}\s+\d{5}", text)
+        if addr_m:
+            city = addr_m.group(1).strip()
 
-    # Category from breadcrumb
+    # Category — last breadcrumb link (most specific), excluding "Groupon" / "Local"
     category = ""
-    breadcrumbs = soup.select("[class*='breadcrumb'] a, nav a")
-    if len(breadcrumbs) >= 2:
-        category = breadcrumbs[-2].get_text(strip=True) if len(breadcrumbs) >= 2 else ""
+    bc_texts = [
+        bc.get_text(strip=True)
+        for bc in soup.find_all("a", attrs={"data-testid": re.compile(r"breadcrumb", re.I)})
+        if bc.get_text(strip=True) and len(bc.get_text(strip=True)) < 50
+        and "groupon" not in bc.get_text(strip=True).lower()
+    ]
+    if bc_texts:
+        category = bc_texts[-1]
+    if not category:
+        bcs = soup.select("nav a, [aria-label*='breadcrumb'] a")
+        candidates = [b.get_text(strip=True) for b in bcs if 2 < len(b.get_text(strip=True)) < 50]
+        if candidates:
+            category = candidates[-1]
 
     pricing = _extract_pricing(soup)
     highlights = _extract_highlights(soup)
@@ -493,7 +540,13 @@ async def _scrape_with_playwright(url: str) -> str:
                 user_agent=HEADERS["User-Agent"],
                 locale="en-US",
             )
-            await page.goto(url, wait_until="networkidle", timeout=30000)
+            try:
+                await page.goto(url, wait_until="networkidle", timeout=60000)
+            except Exception:
+                # networkidle timed out — retry with domcontentloaded + extra wait
+                logger.info("networkidle timeout, retrying with domcontentloaded for %s", url)
+                await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+                await page.wait_for_timeout(6000)
             await page.wait_for_timeout(3000)
             content = await page.content()
             await browser.close()

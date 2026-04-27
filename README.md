@@ -55,9 +55,9 @@ CLI (cli.py)
     │       └─► DealAudit → DuckDB (audits table)
     │
     ├─► Researcher (pipeline/researcher.py)
-    │       Google search (googlesearch-python)
-    │       Yelp API / scrape fallback
-    │       Merchant website visit
+    │       SerpAPI (real Google results — competitor prices, review snippets)
+    │       Yelp Fusion API (merchant ratings, competitor businesses)
+    │       Merchant website visit (direct price scrape)
     │       └─► Raw data dict
     │
     ├─► AI Client (pipeline/ai/client.py)
@@ -77,7 +77,8 @@ CLI (cli.py)
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `ANTHROPIC_API_KEY` | Yes | Anthropic API key (sk-ant-...) |
-| `YELP_API_KEY` | No | Yelp Fusion API key — falls back to HTML scraping if absent |
+| `YELP_API_KEY` | No | Yelp Fusion API key — merchant ratings and competitor data; skipped if absent |
+| `SERP_API_KEY` | No | SerpAPI key — real Google search results for competitor pricing and review quotes; skipped if absent |
 
 ## Database
 

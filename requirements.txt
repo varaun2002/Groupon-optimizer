@@ -6,7 +6,6 @@ pydantic>=2.0
 anthropic
 click
 rich
-googlesearch-python
 python-dotenv
 lxml
 requests

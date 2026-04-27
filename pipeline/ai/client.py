@@ -91,20 +91,24 @@ def analyze_audit(audit: DealAudit) -> dict:
 def synthesize_research(raw_data: dict, audit: DealAudit) -> ResearchData:
     import json as _json
     audit_json = audit.model_dump_json(indent=2)
-    raw_data_json = _json.dumps(raw_data, indent=2, default=str)[:8000]  # cap to avoid token overrun
+    raw_data_json = _json.dumps(raw_data, indent=2, default=str)[:8000]
 
     user_msg = build_research_synthesis_user(audit_json, raw_data_json)
 
     try:
         raw, _ = _call(HAIKU, RESEARCH_SYNTHESIS_SYSTEM, user_msg, max_tokens=4096)
         data = _parse_json(raw)
+        # Prefer AI-extracted values; fall back to values measured directly by the researcher
+        # (AI sometimes fails to pass through numeric fields even when present in raw_data)
+        yelp_rating = data.get("yelp_rating") or raw_data.get("yelp_rating")
+        yelp_review_count = data.get("yelp_review_count") or raw_data.get("yelp_review_count")
         return ResearchData(
             url=audit.url,
             slug=audit.slug,
             competitor_prices=data.get("competitor_prices", []),
             merchant_direct_price=data.get("merchant_direct_price"),
-            yelp_rating=data.get("yelp_rating"),
-            yelp_review_count=data.get("yelp_review_count"),
+            yelp_rating=yelp_rating,
+            yelp_review_count=yelp_review_count,
             google_rating=data.get("google_rating"),
             sentiment_themes=data.get("sentiment_themes", []),
             review_quotes=data.get("review_quotes", []),

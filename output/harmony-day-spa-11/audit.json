@@ -1,0 +1,185 @@
+{
+  "url": "https://www.groupon.com/deals/harmony-day-spa-11",
+  "slug": "harmony-day-spa-11",
+  "title": "Harmony Day Spa offers relaxing full body hot stone massage options with BioFreeze, enjoy up to 21% off today",
+  "subtitle": null,
+  "merchant_name": "Harmony Day Spa",
+  "city": "Monterey Park",
+  "category": "Hot Stone Massage",
+  "pricing_options": [
+    {
+      "name": "60-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "original_price": 77.8,
+      "deal_price": 55.31,
+      "discount_pct": 29.0,
+      "savings": 22.49,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 49.78
+    },
+    {
+      "name": "90-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "original_price": 95.0,
+      "deal_price": 67.54,
+      "discount_pct": 29.0,
+      "savings": 27.46,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 60.79
+    },
+    {
+      "name": "120-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "original_price": 152.8,
+      "deal_price": 108.63,
+      "discount_pct": 29.0,
+      "savings": 44.17,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 97.77
+    }
+  ],
+  "highlights": [
+    "Need To Know Info",
+    "Where To Redeem",
+    "120-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream: Experience a lengthy session focused on total body relaxation using hot stones and pain-relieving cream.",
+    "60-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream: Enjoy an hour-long massage designed for quick yet thorough relief using hot stones and specialized cream.",
+    "90-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream: Opt for an extended session targeting tension relief through hot stone therapy paired with soothing cream.",
+    "Redemption & BookingMust sign waiver.",
+    "Must sign waiver.",
+    "Inclusions & LimitationsNot valid toward gratuity.",
+    "Not valid toward gratuity.",
+    "Terms & ConditionsLimit 1 per person(s), may buy 3 additional as gift(s).May be repurchased every 30 days.Limit 1 per visit.Not valid with insurance.Valid only for option purchased.Merchant's standard cancellation policy applies (any fees not to exceed Groupon price)."
+  ],
+  "fine_print": [
+    "Limit 1 per person(s), may buy 3 additional as gift(s).",
+    "May be repurchased every 30 days.",
+    "Limit 1 per visit.",
+    "Not valid with insurance.",
+    "Valid only for option purchased.",
+    "Merchant's standard cancellation policy applies (any fees not to exceed Groupon price)."
+  ],
+  "faqs": [
+    {
+      "question": "What session lengths are available for the Full Body Hot Stone Massage at Harmony Day Spa?",
+      "answer": "Harmony Day Spa offers three session lengths for the Full Body Hot Stone Massage: 60 minutes, 90 minutes, and 120 minutes. All three options include BioFreeze Pain Relieving Cream as part of the treatment."
+    },
+    {
+      "question": "What techniques and products are used during the Relaxing Full Body Hot Stone Massage?",
+      "answer": "The Relaxing Full Body Hot Stone Massage incorporates hot stones and lavender oil as part of the treatment. BioFreeze Pain Relieving Cream is also included with every session option."
+    },
+    {
+      "question": "Where is Harmony Day Spa located?",
+      "answer": "Harmony Day Spa is located at 321 West Garvey Avenue in Monterey Park, CA 91754, operating under the name Huntington Monterey at that address."
+    },
+    {
+      "question": "What can customers expect in terms of facility cleanliness at Harmony Day Spa?",
+      "answer": "The facility at Harmony Day Spa is consistently described as clean across multiple independent customer visits. This observation has been confirmed by six separate reviewers."
+    },
+    {
+      "question": "Is there anything to be aware of regarding communication with staff during the Relaxing Full Body Hot Stone Massage?",
+      "answer": "Staff at Harmony Day Spa have been noted to have limited English language ability, which can create a communication barrier with some customers. This has been flagged by multiple independent reviewers."
+    },
+    {
+      "question": "What type of experience do customers typically report after their Full Body Hot Stone Massage session?",
+      "answer": "Customers consistently report leaving their sessions feeling relaxed, as confirmed by multiple independent reviewers. The Relaxing Full Body Hot Stone Massage is also categorized under both Hot Stone Massage and Custom Massage services."
+    }
+  ],
+  "images": {
+    "count": 39,
+    "alt_texts": [
+      "Harmony Day Spa offers relaxing full body hot stone massage options with BioFreeze, enjoy up to 21% off today - Primary Image",
+      "Daily Views Icon",
+      "Daily Views Icon",
+      "Parking",
+      "Takes Reservations",
+      "Redemption locations map",
+      "Experience ultimate relaxation with a 90-min custom bodywork session at YanYan Beauty Spa Up To  50%",
+      "Massage for One or Two with Hot Stones or CBD Oil at Chelsea Wellness",
+      "Solo or Couples VIP Pampering Packages or 60-Minute Couples Massage",
+      "Tailored Solo or Couples Deluxe Body Massage with Hot Stone and Essential Oil Treatment at JR Spa- Up to 50% Off",
+      "Up to 65% Off Couples Massage at 27 Tai JI Spa",
+      "Custom 1 or 2 60 Minute HydroMassage Sessions",
+      "Single or Couples Massage with Hot Stones at Renew Body SPA",
+      "Unwind and Relax: Scalp or Body Massage for 1 or 2 at Utopia Spa",
+      "Up to 62% Off on Deep Tissue Massage at Xcellent Skin Care",
+      "Deeply Relaxing Full-Body Massage with Hot Stones & Aromatherapy",
+      "Unwind with Deep Tissue Massage, Hot Stones, Acupressure & Reflexology",
+      "Relaxing Body & Foot Massage Combo at Wildflower Spa",
+      "Up to 41% Off Spa Pass Admission for 1 or 2 at The SPA Club",
+      "One Colon Hydrotherapy Treatment, HydroColonic Treatment and More"
+    ],
+    "quality_assessment": "Weak image quality signals. While count of 39 images appears robust, alt_texts reveal significant issues: 19 of the alt texts are competitor deal promotions (YanYan Beauty Spa, Chelsea Wellness, Renew Body SPA, etc.) rather than actual product imagery for Harmony Day Spa. Only the primary image alt text and amenity icons (Parking, Reservations, map) relate to the actual merchant. This suggests poor image curation and potential SEO/conversion problems."
+  },
+  "script_count": 202,
+  "stylesheet_count": 3,
+  "mobile_viewport_meta": "width=device-width",
+  "reviews": [
+    {
+      "rating": null,
+      "text": "The therapist was excellent",
+      "date": "18 days ago",
+      "author": "Jose"
+    },
+    {
+      "rating": null,
+      "text": "Excellent!",
+      "date": "66 days ago",
+      "author": "Jose"
+    },
+    {
+      "rating": null,
+      "text": "Excellent massage at this long-time massage establishment in Monterey Park. Not necessarily a modern spa facility, but instead, more of a \"well-worn\" comfortable space for a massage. Susan is a very attentive and skilled masseuse, and she provided a very therapeutic and thoroughly relaxing 90 min massage. Read More",
+      "date": "90 days ago",
+      "author": "David"
+    },
+    {
+      "rating": null,
+      "text": "One of best massages I've had.  The biofreeze was so helpful.",
+      "date": "96 days ago",
+      "author": "Michael"
+    },
+    {
+      "rating": null,
+      "text": "Excellent Merchant reply: 110 days ago Thank you again Sir :)))))",
+      "date": "110 days ago",
+      "author": "Jose"
+    }
+  ],
+  "seo": {
+    "meta_title": "Harmony Day Spa - From $55.31 - Monterey Park | Groupon",
+    "meta_description": "Harmony Day Spa offers relaxing full body hot stone massage options with BioFreeze, enjoy up to 21% off today",
+    "h1": "Harmony Day Spa offers relaxing full body hot stone massage options with BioFreeze, enjoy up to 21% off today",
+    "h2s": [
+      "60-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "90-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "120-Minute Full Body Hot Stone Massage with BioFreeze Pain Relieving Cream",
+      "Amenities",
+      "Need To Know Info",
+      "About Harmony Day Spa",
+      "Where To Redeem",
+      "Customer Photos & Videos"
+    ],
+    "schema_types": [
+      "BreadcrumbList",
+      "Organization",
+      "ProductGroup",
+      "FAQPage",
+      "WebSite",
+      "HealthAndBeautyBusiness"
+    ],
+    "canonical_url": "https://www.groupon.com/deals/harmony-day-spa-11"
+  },
+  "trust_signals": {
+    "review_count": 2000,
+    "avg_rating": 4.4,
+    "num_sold": "1,000+ bought",
+    "has_guarantee": true,
+    "badges": [
+      "Popular Gift"
+    ]
+  },
+  "urgency": {
+    "has_countdown": true,
+    "limited_quantity_text": "Extra $6.15 off, today only",
+    "selling_fast": false
+  },
+  "raw_html_length": 1555075,
+  "scraped_at": "2026-04-27T03:56:23.752756+00:00"
+}

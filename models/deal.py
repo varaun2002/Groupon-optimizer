@@ -10,6 +10,8 @@ class PricingOption(BaseModel):
     deal_price: float | None = None
     discount_pct: float | None = None
     savings: float | None = None
+    coupon_code: str | None = None
+    coupon_price: float | None = None
 
 
 class ImageData(BaseModel):

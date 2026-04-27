@@ -1,0 +1,182 @@
+{
+  "url": "https://www.groupon.com/deals/clean-wave-car-wash",
+  "slug": "clean-wave-car-wash",
+  "title": "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash",
+  "subtitle": null,
+  "merchant_name": "Clean Wave Car Wash",
+  "city": "Royal Palm Beach",
+  "category": "Car Wash",
+  "pricing_options": [
+    {
+      "name": "One Full Service Manager Special (Clean Inside & Out)",
+      "original_price": 38.0,
+      "deal_price": 21.6,
+      "discount_pct": 43.0,
+      "savings": 16.4,
+      "coupon_code": "TOPDEALS",
+      "coupon_price": 19.44
+    },
+    {
+      "name": "Three Full Service Manager Specials (Clean Inside & Out)",
+      "original_price": 114.0,
+      "deal_price": 53.1,
+      "discount_pct": 53.0,
+      "savings": 60.9,
+      "coupon_code": "TOPDEALS",
+      "coupon_price": 47.79
+    }
+  ],
+  "highlights": [
+    "Need To Know Info",
+    "Where To Redeem",
+    "Full Service Manager Special:Clean inside and outFour-step paint sealant processHot waxRain XTire shineInterior vacuumWindow cleaningDash and center console cleaningCeramic sealantCarbonite infused with graphene",
+    "Clean inside and out",
+    "Four-step paint sealant process",
+    "Interior vacuum",
+    "Window cleaning",
+    "Dash and center console cleaning",
+    "Ceramic sealant",
+    "Carbonite infused with graphene"
+  ],
+  "fine_print": [
+    "Limit 2 per person(s), may buy 3 additional as gift(s).",
+    "Valid only for option purchased.",
+    "May be repurchased every 365 days.",
+    "Limit 1 per visit."
+  ],
+  "faqs": [
+    {
+      "question": "What does the Full Service (Inside and Out) Car Wash at Clean Wave Car Wash include?",
+      "answer": "The Full Service (Inside and Out) Car Wash at Clean Wave Car Wash covers both interior and exterior cleaning of the vehicle. The service is offered as the Manager Special, addressing the full vehicle from the inside out."
+    },
+    {
+      "question": "How many service options are available for the Clean Wave Car Wash Manager Special?",
+      "answer": "There are two options available: One Full Service Manager Special (Clean Inside & Out) or Three Full Service Manager Specials (Clean Inside & Out). Both options provide the same full interior and exterior cleaning service."
+    },
+    {
+      "question": "Where is Clean Wave Car Wash located?",
+      "answer": "Clean Wave Car Wash is located at 9960 Belvedere Road in the Breakers West area of Royal Palm Beach, FL 33411."
+    },
+    {
+      "question": "Is the Full Service (Inside and Out) Car Wash at Clean Wave Car Wash suitable for a multi-visit purchase?",
+      "answer": "Yes, the deal includes an option for three Full Service Manager Specials, allowing customers to use the full interior and exterior cleaning service across multiple visits to Clean Wave Car Wash."
+    },
+    {
+      "question": "What type of automotive service does Clean Wave Car Wash specialize in?",
+      "answer": "Clean Wave Car Wash specializes in auto cleaning services, specifically full service car washing that covers both the inside and outside of the vehicle."
+    },
+    {
+      "question": "Does Clean Wave Car Wash accept walk-in customers?",
+      "answer": "Clean Wave operates as a walk-in car wash facility where customers can arrive without advance reservations. Visitors report being able to drive up and proceed through the service, with the process moving from the automated wash directly to the manual finishing and interior cleaning stations."
+    },
+    {
+      "question": "What is included in Clean Wave Car Wash's full service package?",
+      "answer": "The full service package includes both exterior and interior cleaning, with the exterior washed by machine and the interior vacuumed and wiped down, including windows and all interior surfaces. Visitors consistently report that the service covers thorough attention to detail on both the outside and inside of the vehicle, with staff performing meticulous finishing work after the automated wash cycle."
+    },
+    {
+      "question": "How long does the full service car wash take at Clean Wave?",
+      "answer": "The car wash process moves quickly through the automated system, with the finishing touches and interior cleaning adding additional time for a thorough result. Multiple visitors note that while there may be a brief wait for the drying and interior cleaning phase, the overall service is efficient and the final result justifies the time spent."
+    }
+  ],
+  "images": {
+    "count": 39,
+    "alt_texts": [
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Primary Image",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 2",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 3",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 4",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 5",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 6",
+      "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash - Image 7",
+      "Daily Views Icon",
+      "Daily Views Icon",
+      "Redemption locations map",
+      "One Works or Ultimate Car Wash Options with Ceramic Sealant",
+      "$45 For a Glaze Wax With \"The Works\" Car Wash Package (Reg. $90)",
+      "Exterior & Interior Car Detail at Royal Touch Hand Wash",
+      "Up to 51% Off Detailing at Cannon Collision",
+      "Up to 41% Off on Exterior & Interior Car Detail",
+      "Interior and Exterior Wash for a Sedan or SUV by Skilled Professionals",
+      "Interior Car Detailing for Sedan, SUV or Large 3-Row SUV",
+      "Experience the Ultimate Hand Car Wash, Detailing and Oil Change",
+      "$21.50 For A Grand Slam Full Interior & Exterior Car Wash (Reg. $43)",
+      "Detail Your Car: Full Interior and Exterior Wash for a Sedan or SUVs"
+    ],
+    "quality_assessment": "Total of 39 images with 20 alt_texts provided shows reasonable coverage. However, alt_texts are generic and repetitive (Images 2-7 use identical template format), lacking descriptive detail about car wash stages, results, or facility features. Only 20 alt_texts for 39 images suggests 19 images lack proper descriptions, reducing SEO value and accessibility."
+  },
+  "script_count": 203,
+  "stylesheet_count": 3,
+  "mobile_viewport_meta": "width=device-width",
+  "reviews": [
+    {
+      "rating": null,
+      "text": "They always do a great job. Very Professional.",
+      "date": "2 days ago",
+      "author": "john"
+    },
+    {
+      "rating": null,
+      "text": "Customer service is always friendly and helpful",
+      "date": "3 days ago",
+      "author": "Wendy"
+    },
+    {
+      "rating": null,
+      "text": "This is where to go when you need a complete car wash!",
+      "date": "8 days ago",
+      "author": "Elizabeth"
+    },
+    {
+      "rating": null,
+      "text": "Great service! Always happy with this place!",
+      "date": "10 days ago",
+      "author": "Lilia"
+    },
+    {
+      "rating": null,
+      "text": "The staff that vacuum and clean the inside of the car always does a great job.\nThey are also wipe down the outside of the car, clean the windows, seats, and all of the inside surfaces. I do appreciate the work they do and I tip them well for it. Read More",
+      "date": "19 days ago",
+      "author": "Guest"
+    }
+  ],
+  "seo": {
+    "meta_title": "Clean Wave Car Wash - From $21.60 - Royal Palm Beach | Groupon",
+    "meta_description": "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash",
+    "h1": "Up to 53% Off on Full Service(Inside and Out) Car Wash at Clean Wave Car Wash",
+    "h2s": [
+      "One Full Service Manager Special (Clean Inside & Out)",
+      "Three Full Service Manager Specials (Clean Inside & Out)",
+      "Need To Know Info",
+      "About Clean Wave Car Wash",
+      "Where To Redeem",
+      "Customer Photos & Videos",
+      "Customer Reviews",
+      "Frequently Asked Questions"
+    ],
+    "schema_types": [
+      "BreadcrumbList",
+      "Organization",
+      "ProductGroup",
+      "FAQPage",
+      "WebSite",
+      "AutomotiveBusiness"
+    ],
+    "canonical_url": "https://www.groupon.com/deals/clean-wave-car-wash"
+  },
+  "trust_signals": {
+    "review_count": 2000,
+    "avg_rating": 4.6,
+    "num_sold": "10,000+ bought",
+    "has_guarantee": true,
+    "badges": [
+      "Best Rated Popular Gift"
+    ]
+  },
+  "urgency": {
+    "has_countdown": true,
+    "limited_quantity_text": "Extra $2.40 off, today only",
+    "selling_fast": false
+  },
+  "raw_html_length": 1434087,
+  "scraped_at": "2026-04-27T03:43:01.065519+00:00"
+}

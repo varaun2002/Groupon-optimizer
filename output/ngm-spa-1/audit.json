@@ -1,0 +1,158 @@
+{
+  "url": "https://www.groupon.com/deals/ngm-spa-1",
+  "slug": "ngm-spa-1",
+  "title": "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available",
+  "subtitle": null,
+  "merchant_name": "NGM Spa",
+  "city": "New York",
+  "category": "Botox",
+  "pricing_options": [
+    {
+      "name": "20 Units of Botox (Valid for One Treatment Area Only)",
+      "original_price": 300.0,
+      "deal_price": 143.37,
+      "discount_pct": 52.0,
+      "savings": 156.63,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 129.03
+    },
+    {
+      "name": "40 Units of Botox",
+      "original_price": 600.0,
+      "deal_price": 286.2,
+      "discount_pct": 52.0,
+      "savings": 313.8,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 257.58
+    },
+    {
+      "name": "60 Units of Botox",
+      "original_price": 900.0,
+      "deal_price": 429.3,
+      "discount_pct": 52.0,
+      "savings": 470.7,
+      "coupon_code": "GLOWUP",
+      "coupon_price": 386.37
+    }
+  ],
+  "highlights": [
+    "Need To Know Info",
+    "Where To Redeem",
+    "60 Units of Botox",
+    "20 Units of Botox (Valid for One Treatment Area Only)",
+    "40 Units of Botox",
+    "Inclusions & LimitationsNot valid toward taxes or gratuity.",
+    "Not valid toward taxes or gratuity.",
+    "Terms & ConditionsNot valid with insurance.May be repurchased every 90 days.All goods or services must be used by the same person.Limit 3 per person.Not valid with other offers or promotions.",
+    "Not valid with insurance.",
+    "May be repurchased every 90 days."
+  ],
+  "fine_print": [
+    "Not valid with insurance.",
+    "May be repurchased every 90 days.",
+    "All goods or services must be used by the same person.",
+    "Limit 3 per person.",
+    "Not valid with other offers or promotions."
+  ],
+  "faqs": [],
+  "images": {
+    "count": 37,
+    "alt_texts": [
+      "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available - Primary Image",
+      "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available - Image 2",
+      "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available - Image 3",
+      "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available - Image 4",
+      "Daily Views Icon",
+      "Daily Views Icon",
+      "Redemption locations map",
+      "20, 40, or 60 Units of Botox Injections for Rejuvenating Your Skin",
+      "Enhance Your Look with 20, 40, or 60 Units of Botox",
+      "20, 40, or 60 Units of Botox at VR Med Spa",
+      "Up to 55% Off Botox and Juvederm at Tox & Lips Aesthetics",
+      "Up to 75% Off Botox and Juvederm at Luxury Spa",
+      "Wrinkle Treatment — Unlimited Units for the Three FDA Approved Areas",
+      "Revitalize with 20, 40, or 60 Units of Botox for Comprehensive Care",
+      "Revitalize Your Look: 20, 40 or 60 Units of Botox at Shots & Bandages",
+      "Experience Eureka Body Care's Botox treatments with 20 units or Botox Lip Flip",
+      "Up to 45% Off 40 Units of Botox Injections or Lip Flip",
+      "Up to 44% Off Botox at Selfie House Med Spa",
+      "Botox Injections for Brows or Eyes: 20 or 40 Units Options",
+      "Revanesse Versa, RHA Lip, Marionette, or Chin Filler/ Daxxify Packages"
+    ],
+    "quality_assessment": "37 images with 20 alt_texts provided shows good visual content coverage. Alt texts are descriptive and specific (e.g., '20, 40, or 60 Units of Botox Injections for Rejuvenating Your Skin', 'Redemption locations map'), indicating professional optimization. However, alt_text coverage ratio suggests some images may lack descriptive text."
+  },
+  "script_count": 201,
+  "stylesheet_count": 3,
+  "mobile_viewport_meta": "width=device-width",
+  "reviews": [
+    {
+      "rating": null,
+      "text": "Excellent service, staff and ambiance!",
+      "date": "43 days ago",
+      "author": "Guest"
+    },
+    {
+      "rating": null,
+      "text": "Love them I’ve gone here for 2 years and can’t say enough about how great they are",
+      "date": "48 days ago",
+      "author": "nicole"
+    },
+    {
+      "rating": null,
+      "text": "I’ve gone here for the last 2 years and love them !",
+      "date": "48 days ago",
+      "author": "nicole"
+    },
+    {
+      "rating": null,
+      "text": "This was my 3rd visit back. Tanya is fabulous! 5 stars ⭐️",
+      "date": "54 days ago",
+      "author": "Guest"
+    },
+    {
+      "rating": null,
+      "text": "The best place to get Botox very professional",
+      "date": "54 days ago",
+      "author": "Cristina"
+    }
+  ],
+  "seo": {
+    "meta_title": "NGM Spa - From $143.37 - New York | Groupon",
+    "meta_description": "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available",
+    "h1": "Up to 52% Off Botox Injections at NGM Spa — 20 / 40 / 60 Units Available",
+    "h2s": [
+      "20 Units of Botox (Valid for One Treatment Area Only)",
+      "40 Units of Botox",
+      "60 Units of Botox",
+      "What We Offer",
+      "Why You Should Grab The Offer",
+      "What We Offer",
+      "Why You Should Grab The Offer",
+      "Need To Know Info"
+    ],
+    "schema_types": [
+      "BreadcrumbList",
+      "Organization",
+      "ProductGroup",
+      "WebSite",
+      "HealthAndBeautyBusiness"
+    ],
+    "canonical_url": "https://www.groupon.com/deals/ngm-spa-1"
+  },
+  "trust_signals": {
+    "review_count": 215,
+    "avg_rating": 4.7,
+    "num_sold": "260+ bought",
+    "has_guarantee": true,
+    "badges": [
+      "Best Rated"
+    ]
+  },
+  "urgency": {
+    "has_countdown": true,
+    "limited_quantity_text": "Extra $15.93 off, today only",
+    "selling_fast": false
+  },
+  "raw_html_length": 1513947,
+  "scraped_at": "2026-04-27T03:51:56.140776+00:00"
+}

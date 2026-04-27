@@ -1,0 +1,159 @@
+{
+  "url": "https://www.groupon.com/deals/valvoline-instant-oil-change-63",
+  "slug": "valvoline-instant-oil-change-63",
+  "title": "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off)",
+  "subtitle": null,
+  "merchant_name": "Valvoline Instant Oil Change",
+  "city": "Los Angeles",
+  "category": "Oil Change",
+  "pricing_options": [
+    {
+      "name": "Conventional Oil Change (Valid at Select Locations)",
+      "original_price": 56.99,
+      "deal_price": 34.19,
+      "discount_pct": 40.0,
+      "savings": 22.8,
+      "coupon_code": null,
+      "coupon_price": null
+    },
+    {
+      "name": "Synthetic Blend Oil Change (Valid at Select Locations)",
+      "original_price": 83.99,
+      "deal_price": 50.39,
+      "discount_pct": 40.0,
+      "savings": 33.6,
+      "coupon_code": null,
+      "coupon_price": null
+    },
+    {
+      "name": "Full Synthetic Oil Change (Does not apply to European Oils) (Valid at Select Locations)",
+      "original_price": 109.99,
+      "deal_price": 65.99,
+      "discount_pct": 40.0,
+      "savings": 44.0,
+      "coupon_code": null,
+      "coupon_price": null
+    }
+  ],
+  "highlights": [
+    "Need To Know Info",
+    "Where To Redeem",
+    "2029 S. Sepulveda Blvd, Los Angeles, CA 90025",
+    "3960 Artesia Blvd, Torrance, CA 90504",
+    "4359 W. Sunset Blvd, Hollywood, CA 90029",
+    "9014 National Blvd, Los Angeles, CA 90034",
+    "Redemption & BookingValid only at participating listed locations.Must wait 24 hours before redeeming.",
+    "Valid only at participating listed locations.",
+    "Must wait 24 hours before redeeming.",
+    "Valid for up to 5 quarts of motor oil. Extra fees for additional quarts and specialty filters."
+  ],
+  "fine_print": [
+    "Limit 1 per person.",
+    "May be repurchased every 365 days.",
+    "Limit 1 voucher per vehicle.",
+    "Limit 1 per household.",
+    "Valid only for option purchased.",
+    "Not valid with other offers or promotions."
+  ],
+  "faqs": [],
+  "images": {
+    "count": 76,
+    "alt_texts": [
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Primary Image",
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Image 2",
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Image 3",
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Image 4",
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Image 5",
+      "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off) - Image 6",
+      "Daily Purchases Icon",
+      "Redemption locations map",
+      "Valvoline Instant Oil Change (Up to $31 Off)",
+      "Oil Change & Wash at First Class Carwash of Valley Stream",
+      "Up to 35% Off Oil Change at Pitstop Lube and Tune",
+      "Enhance Your Ride: Conventional / Regular or Full Synthetic Oil Change",
+      "Efficient Conventional or Full Synthetic Oil Change",
+      "One  Full Synthetic Oil Change with Free Car Wash",
+      "Quality Oil Change - Up to 19% Off",
+      "Up to 46% Off on Oil Change at Divano Tires & Auto Care Center",
+      "Rev Up Your Ride: Experience the Smoothest Oil Change Ever! -Bronx Castrol Premium Lube Express (Up to 35% Off )",
+      "Up to 38% Off on Oil Change at Midas Seaford",
+      "Comprehensive Synthetic Blend or Full Oil Change with Standard Filter",
+      "Up to 31% Off Oil Change, A/C Recharge, and More at Midas"
+    ],
+    "quality_assessment": "Image portfolio is extensive with 76 total images, but alt_text quality is weak. Primary alt texts are generic ('Image 2', 'Image 3', etc.) rather than descriptive. Only 20 alt_texts are captured, suggesting incomplete optimization. Includes some contextual images (map, icons, competing deals) but lacks specific descriptive alt text for product/service photos needed for accessibility and SEO."
+  },
+  "script_count": 205,
+  "stylesheet_count": 3,
+  "mobile_viewport_meta": "width=device-width",
+  "reviews": [
+    {
+      "rating": null,
+      "text": "Great customer service and quick. I am very happy with the results",
+      "date": "1 day ago",
+      "author": "Jose"
+    },
+    {
+      "rating": null,
+      "text": "Very good and quick service was provided",
+      "date": "1 day ago",
+      "author": "Muruganandam"
+    },
+    {
+      "rating": null,
+      "text": "6 hours ago Good",
+      "date": null,
+      "author": "Can"
+    },
+    {
+      "rating": null,
+      "text": "Store manager",
+      "date": "3 days ago",
+      "author": "andrea"
+    },
+    {
+      "rating": null,
+      "text": "This is a great deal. I wish we were allowed to get this discount as often as we would like to. One of the employees told me there's a two times a year limit.",
+      "date": "3 days ago",
+      "author": "Laura"
+    }
+  ],
+  "seo": {
+    "meta_title": "Valvoline Instant Oil Change - From $34.19 | Groupon",
+    "meta_description": "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off)",
+    "h1": "Oil Change Services at Valvoline Instant Oil Change (Up to 40% Off)",
+    "h2s": [
+      "Conventional Oil Change (Valid at Select Locations)",
+      "Synthetic Blend Oil Change (Valid at Select Locations)",
+      "Full Synthetic Oil Change (Does not apply to European Oils) (Valid at Select Locations)",
+      "What’s Included:",
+      "Extras:",
+      "Not Included:",
+      "Grab the Deal",
+      "No Appointment Needed"
+    ],
+    "schema_types": [
+      "BreadcrumbList",
+      "Organization",
+      "ProductGroup",
+      "AutoRepair",
+      "WebSite"
+    ],
+    "canonical_url": "https://www.groupon.com/deals/valvoline-instant-oil-change-63"
+  },
+  "trust_signals": {
+    "review_count": 52000,
+    "avg_rating": 4.7,
+    "num_sold": "1,000+ bought",
+    "has_guarantee": true,
+    "badges": [
+      "Best Rated Trending Popular Gift"
+    ]
+  },
+  "urgency": {
+    "has_countdown": false,
+    "limited_quantity_text": "Limited time",
+    "selling_fast": false
+  },
+  "raw_html_length": 1545239,
+  "scraped_at": "2026-04-27T03:40:51.539811+00:00"
+}

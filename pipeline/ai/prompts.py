@@ -73,9 +73,12 @@ PROPOSAL_USER_TEMPLATE = (
     "- Every priority_ranking entry MUST include a data_citation naming a specific number, quote, competitor name, or metric\n"
     "- If you cannot cite specific data for a recommendation, do not include it in priority_ranking\n"
     "- title_rewrite MUST be a complete, ready-to-publish title string (not a template)\n"
-    "- competitive_positioning MUST name at least 2 specific competitors by name with their prices\n"
     "- title_reasoning MUST cite specific data (current title word count, missing keywords, competitor patterns)\n"
-    "- All pricing references must use exact numbers from the provided data\n\n"
+    "- All pricing references must use exact numbers from the provided data\n"
+    "- expected_impact values are ESTIMATES only — write them as 'estimated +X%' and never present them as A/B tested or benchmarked figures\n"
+    "- For competitive_positioning: if research_data.competitor_prices contains verified entries, use those and cite their source_url. "
+    "If competitor_prices is empty, you may draw on general market knowledge BUT you MUST label every unverified figure with "
+    "'(estimated market rate — not verified by research pipeline)'. Never present AI training-knowledge prices as researched data.\n\n"
     "Return JSON with exactly these keys:\n"
     '{{\n'
     '  "title_rewrite": "<complete ready-to-publish title>",\n'
