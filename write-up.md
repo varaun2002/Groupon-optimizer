@@ -6,7 +6,7 @@ A fully automated Python pipeline (`groupon-optimizer`) that scrapes Groupon dea
 
 ## How I Used AI in the Build (not just as a feature)
 
-Claude Code (claude-sonnet-4-6) was used to architect and generate every module of this pipeline — from the Pydantic v2 models and DuckDB schema to the scraping logic, researcher, prompts, and CLI. The AI was responsible for all code generation, debugging extraction logic (e.g., pricing regex, JSON-LD schema parsing, review quote extraction), and writing the structured prompt templates that power the runtime AI analysis. The human role was specifying requirements and iterating on output quality — not writing code line-by-line.
+Claude Code was used throughout the build to accelerate implementation — generating boilerplate, debugging extraction edge cases, and iterating on prompt templates. The architectural decisions were mine: the 4-stage pipeline structure, DuckDB over Postgres for zero-infrastructure portability, Haiku vs Sonnet tiering by task complexity, and the anti-hallucination constraints in the proposal prompts. I treated Claude Code the way a senior engineer treats a fast junior — directing, reviewing, and iterating on every output rather than accepting it blindly.
 
 ## What Surprised Me in the Research
 
