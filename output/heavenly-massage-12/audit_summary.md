@@ -1,7 +1,7 @@
 # Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements
 
 **Merchant:** Heavenly Massage | **City:**  | **Category:** Bath Houses
-**Rating:** 4.6 | **Sold:** 25,000+ bought | **Scraped:** 2026-04-27T03:29:37.189673+00:00
+**Rating:** 4.6 | **Sold:** 25,000+ bought | **Scraped:** 2026-05-05T02:13:06.229352+00:00
 
 ---
 
@@ -9,12 +9,12 @@
 
 | Option | Original | Deal Price | Discount | Savings | Coupon |
 |--------|----------|------------|----------|---------|--------|
-| 60-Minute Swedish or Deep-Tissue Massage Session w/ Aromatherapy & Steam Shower Aroma Enhancements | $135.00 | $89.99 | 33% | $45.01 | $81.49 (code: GLOWUP) |
-| 90-Minute Swedish or Deep-Tissue Massage Session w/ Aromatherapy & Steam Shower Aroma Enhancements | $175.00 | $125.99 | 28% | $49.01 | $113.99 (code: GLOWUP) |
-| 60-Minute Swedish or Deep-Tissue Massage Session for Two w/ Aromatherapy & Steam Shower Aroma Enhancements | $270.00 | $161.99 | 40% | $108.01 | $146.49 (code: GLOWUP) |
-| 90-Minute Swedish or Deep-Tissue Massage Session for Two w/ Aromatherapy & Steam Shower Aroma Enhancements | $350.00 | $251.99 | 28% | $98.01 | $227.49 (code: GLOWUP) |
-| One 60-Minute Swedish or Deep-Tissue Massage Session w/ CBD Oil and Aromatherapy | $165.00 | $98.99 | 40% | $66.01 | $89.49 (code: GLOWUP) |
-| One 90-Minute Swedish or Deep-Tissue Massage Session w/ CBD Oil and Aromatherapy | $205.00 | $134.99 | 34% | $70.01 | $121.99 (code: GLOWUP) |
+| 60-Minute Swedish or Deep-Tissue Massage Session w/ Aromatherapy & Steam Shower Aroma Enhancements | $135.00 | $89.99 | 33% | $45.01 | $81.49 (code: RELAX) |
+| 90-Minute Swedish or Deep-Tissue Massage Session w/ Aromatherapy & Steam Shower Aroma Enhancements | $175.00 | $125.99 | 28% | $49.01 | $113.99 (code: RELAX) |
+| 60-Minute Swedish or Deep-Tissue Massage Session for Two w/ Aromatherapy & Steam Shower Aroma Enhancements | $270.00 | $161.99 | 40% | $108.01 | $146.49 (code: RELAX) |
+| 90-Minute Swedish or Deep-Tissue Massage Session for Two w/ Aromatherapy & Steam Shower Aroma Enhancements | $350.00 | $251.99 | 28% | $98.01 | $227.49 (code: RELAX) |
+| One 60-Minute Swedish or Deep-Tissue Massage Session w/ CBD Oil and Aromatherapy | $165.00 | $98.99 | 40% | $66.01 | $89.49 (code: RELAX) |
+| One 90-Minute Swedish or Deep-Tissue Massage Session w/ CBD Oil and Aromatherapy | $205.00 | $134.99 | 34% | $70.01 | $121.99 (code: RELAX) |
 
 
 ## What You Get
@@ -61,37 +61,37 @@ A: Customers are required to complete a pre-existing conditions intake form at t
 
 ## Page Technical Signals
 
-- **Images:** 46 | **Scripts:** 202 | **Stylesheets:** 3
+- **Images:** 46 | **Scripts:** 203 | **Stylesheets:** 3
 - **Mobile viewport:** width=device-width
-- **Schema types:** BreadcrumbList, Organization, ProductGroup, FAQPage, WebSite, DaySpa
+- **Schema types:** DaySpa, WebSite, ProductGroup, Organization, FAQPage, BreadcrumbList
 
 ## AI Audit Scores
 
 | Signal | Score | Reasoning |
 |--------|-------|-----------|
-| Title clarity | 8/10 | Title 'Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements' clearly communicates the core offer (massage type and venue), target audience (solo/couples), and key enhancements. However, it's somewhat lengthy and could be more scannable. |
-| Trust signals | 9/10 | Strong trust signals: review_count of 19000, avg_rating of 4.6 stars, num_sold showing '25,000+ bought', has_guarantee set to true, and badges including 'Best Rated Trending Popular Gift' all work together to establish credibility and social proof. |
-| Urgency | 8/10 | Multiple urgency triggers present: has_countdown is true, limited_quantity_text states 'Extra $10 off, today only' (time-sensitive), and selling_fast is true. These create moderate pressure without appearing overly aggressive. |
+| Title clarity | 8/10 | Title 'Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements' clearly communicates massage type options, party size flexibility, and key enhancements. However, it's somewhat lengthy and could be more scannable for quick comprehension. |
+| Trust signals | 9/10 | Strong trust signals present: review_count of 19000 is substantial, avg_rating of 4.6 is excellent, num_sold shows '25,000+ bought' indicating high popularity and social proof. has_guarantee is true providing additional confidence. Badge 'Best Rated Trending Popular Gift' reinforces credibility. |
+| Urgency | 7/10 | has_countdown is true and limited_quantity_text reads 'Extra $10 off, today only' creating time-pressure. However, selling_fast is false, which weakens the scarcity angle. The daily-only discount provides some urgency but lacks immediate inventory pressure. |
 
 
 ## Image Quality Assessment
 
-46 total images is excellent quantity. Alt texts show 7 primary product images with descriptive naming, plus locations map and related deal recommendations. However, alt texts are generic (Image 2, Image 3, etc.) rather than descriptively specific about spa features, massage types, or environment details, missing opportunity for richer SEO and user context.
+46 total images is excellent coverage. Alt texts are descriptive and SEO-friendly, following pattern 'Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements - Image [#]' for primary images. However, alt texts are somewhat repetitive and generic. Includes relevant contextual images like 'Redemption locations map' and competitor comparisons, though many competitor deal alt texts present reduce focus clarity.
 
 ## FAQ Assessment
 
-Present and strong. 7 comprehensive FAQs address key conversion obstacles including service differentiation (Swedish vs Deep-Tissue), couples options, location specificity (5 Illinois locations with addresses), timing transparency, additional services, and pre-visit requirements. This depth significantly reduces purchase friction and abandonment due to unanswered questions.
+Present and strong - 7 comprehensive FAQs address primary conversion barriers including deal variations, service options, location details, and procedural expectations. FAQ coverage is excellent for this service category, with proper FAQPage schema implementation detected. Each answer is specific and customer-centric, particularly the transparency about session timing (50 mins hands-on + 10 mins consultation/dressing) which builds confidence in value delivery.
 
 ## Top Weaknesses
 
-- **Missing critical merchant location information** — city field is empty string despite having 5 redemption locations listed in FAQ (Chicago, Schaumburg, Orland Park, Morton Grove, Mount Prospect)
-- **Review ratings not displayed with individual reviews** — reviews array shows 5 recent reviews but rating field is null for all entries, weakening social proof impact at the review level
-- **Generic image alt text lacks descriptive specificity** — Alt texts use placeholder naming ('Image 2', 'Image 3', 'Image 4', etc.) instead of describing spa amenities, therapist credentials, or room features that build confidence
+- **Missing critical review ratings on individual reviews** — All 5 reviews in the reviews array have 'rating': null, preventing star-rating visibility that typically drives conversion on social proof
+- **No fine print transparency provided** — fine_print array is empty [], which may raise trust concerns about hidden terms, expiration dates, or booking restrictions
+- **Weak scarcity messaging despite urgency element** — selling_fast is false while has_countdown is true, meaning time-based urgency exists but quantity-based scarcity does not, reducing psychological pressure
 
 
 ## Top Strengths
 
-- **Exceptional review volume and rating credibility** — review_count of 19000 combined with avg_rating of 4.6 stars and '25,000+ bought' creates strong social proof that drives conversion confidence
-- **Comprehensive pricing transparency with value clarity** — 6 pricing options with original_price, deal_price, discount_pct (28-40%), savings amounts, and coupon_code 'GLOWUP' provide clear savings visualization ($45-$108 savings range)
-- **Detailed FAQ coverage addressing key purchase hesitations** — 7 FAQs cover service options, massage type choice, locations, couples availability, steam shower benefits, additional services, and pre-session requirements—directly answering common objections
+- **Exceptional social proof volume and quality** — review_count of 19000 with avg_rating of 4.6 and num_sold of '25,000+ bought' creates powerful consensus and demonstrates proven market demand
+- **Comprehensive FAQ coverage addressing key objections** — 7 detailed FAQ entries covering deal options, massage types, locations, couples availability, steam shower benefits, additional services, and pre-visit requirements eliminate friction points
+- **Transparent pricing and value communication** — 6 pricing_options with clear original_price, deal_price, discount_pct (28-40%), and savings amounts ($45-$108) make ROI immediately apparent and justify purchase decision
 

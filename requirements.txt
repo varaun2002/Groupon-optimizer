@@ -8,5 +8,4 @@ click
 rich
 python-dotenv
 lxml
-requests
 nest-asyncio

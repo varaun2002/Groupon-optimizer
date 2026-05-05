@@ -13,7 +13,7 @@
       "deal_price": 89.99,
       "discount_pct": 33.0,
       "savings": 45.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 81.49
     },
     {
@@ -22,7 +22,7 @@
       "deal_price": 125.99,
       "discount_pct": 28.0,
       "savings": 49.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 113.99
     },
     {
@@ -31,7 +31,7 @@
       "deal_price": 161.99,
       "discount_pct": 40.0,
       "savings": 108.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 146.49
     },
     {
@@ -40,7 +40,7 @@
       "deal_price": 251.99,
       "discount_pct": 28.0,
       "savings": 98.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 227.49
     },
     {
@@ -49,7 +49,7 @@
       "deal_price": 98.99,
       "discount_pct": 40.0,
       "savings": 66.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 89.49
     },
     {
@@ -58,7 +58,7 @@
       "deal_price": 134.99,
       "discount_pct": 34.0,
       "savings": 70.01,
-      "coupon_code": "GLOWUP",
+      "coupon_code": "RELAX",
       "coupon_price": 121.99
     }
   ],
@@ -115,55 +115,55 @@
       "Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements - Image 5",
       "Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements - Image 6",
       "Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements - Image 7",
-      "Selling Fast Icon",
-      "Selling Fast Icon",
+      "Daily Views Icon",
+      "Daily Views Icon",
       "Redemption locations map",
       "Up to 62% Off on Deep Tissue Massage at Xcellent Skin Care",
       "1 or 2 Sessions 60-Minute Swedish or Deep Tissue Massage w/ Hot Stones",
       "Therapeutic Escape: 60 or 90-Minute Swedish or Deep Tissue Massage",
-      "Choose Between 90- or 120-Minute Combo Massage Packages",
-      "Up to 60% Off on Deep Tissue Massage at Elinda Beauty Station",
-      "Up to 58% Off on Deep Tissue Massage at Yuan Shi Spa",
+      "Solo or Couples VIP Pampering Packages or 60-Minute Couples Massage",
+      "Tailored Solo or Couples Deluxe Body Massage with Hot Stone and Essential Oil Treatment at JR Spa- Up to 50% Off",
       "Get 60-Minute Deep Tissue or Swedish Massage w/ Optional Enhancements",
-      "Relax w/ Arnica Deep Tissue (Gentle or Medium Pressure)(60- or 90-Min)",
-      "Up to 65% Off Couples Massage at 27 Tai JI Spa",
-      "Up to 53% Off on Deep Tissue Massage at Project Body Massage And Stretch Therapy"
+      "Single or Couples Massage with Hot Stones at Renew Body SPA",
+      "Rejuvenate Your Skin with a Pampering Package, Massage or Facial",
+      "Deeply Relaxing Full-Body Massage with Hot Stones & Aromatherapy",
+      "Up to 58% Off on Deep Tissue Massage at YAN MAY FOOT SPA INC"
     ],
-    "quality_assessment": "46 total images is excellent quantity. Alt texts show 7 primary product images with descriptive naming, plus locations map and related deal recommendations. However, alt texts are generic (Image 2, Image 3, etc.) rather than descriptively specific about spa features, massage types, or environment details, missing opportunity for richer SEO and user context."
+    "quality_assessment": "46 total images is excellent coverage. Alt texts are descriptive and SEO-friendly, following pattern 'Swedish or Deep Tissue Massage for Solo or Couples at Heavenly Massage w/ Aromatherapy & Steam Shower Enhancements - Image [#]' for primary images. However, alt texts are somewhat repetitive and generic. Includes relevant contextual images like 'Redemption locations map' and competitor comparisons, though many competitor deal alt texts present reduce focus clarity."
   },
-  "script_count": 202,
+  "script_count": 203,
   "stylesheet_count": 3,
   "mobile_viewport_meta": "width=device-width",
   "reviews": [
     {
       "rating": null,
-      "text": "Very friendly staff. Emma is a wonderful massage therapist. Super clean location!",
+      "text": "Excellent service by Kelly and Raminta. Exceeded my expectations.",
+      "date": "1 day ago",
+      "author": "Gio"
+    },
+    {
+      "rating": null,
+      "text": "Always a great experience! I refuse to go anywhere else.",
+      "date": "2 days ago",
+      "author": "Guest"
+    },
+    {
+      "rating": null,
+      "text": "Great place and staff",
       "date": "3 days ago",
-      "author": "Linda"
+      "author": "John"
     },
     {
       "rating": null,
-      "text": "I got a sugar scrub and it was absolutely amazing. I LOVED it! I was so relaxed I almost couldn't drive home. My skin feels like butter. It is so soft. I would definitely recommend Evita! She was so good I remembered her from last years experience and rebooked. Read More",
+      "text": "The nail technician was exceptional....she did a great job with my pedicure, great leg massage, and I now have nice fingernails which were in poor shape thanks to her service. Highly recommend! Read More",
       "date": "5 days ago",
-      "author": "Beranice"
+      "author": "Paulette"
     },
     {
       "rating": null,
-      "text": "I had an amazing experience with the 60-Minute Hydra Peel Facial Treatment with Cassandra. She was professional, knowledgeable, and took time to understand my skin concerns. The treatment was refreshing, thorough, and precise. My skin felt deeply cleansed, hydrated, and noticeably smoother right after. I especially appreciated how intentional she was, explaining each step without making it feel ru",
-      "date": "6 days ago",
-      "author": "Dreama Helpful Reviewer"
-    },
-    {
-      "rating": null,
-      "text": "Great people and great place.",
-      "date": "6 days ago",
-      "author": "Ronald"
-    },
-    {
-      "rating": null,
-      "text": "easy to book the services very friendly staff and service",
-      "date": "7 days ago",
-      "author": "Long"
+      "text": "DENNIS WAS THE BEST OMG MY BODY FEEL AMAZING I WENT N THERE BROKEN CAME OUT A NEW WOMAN THANK U DENNIS AND HM DAY SPA💯💯💯💯💯💯💯💯💯💯🙌🏽🙌🏽🙌🏽🙌🏽🙌🏽🙌🏽🤩🤩🤩🤩🤩 Read More",
+      "date": "5 days ago",
+      "author": "Ebony"
     }
   ],
   "seo": {
@@ -181,12 +181,12 @@
       "Unwind, Detox, and Rejuvenate at Heavenly Massage"
     ],
     "schema_types": [
-      "BreadcrumbList",
-      "Organization",
-      "ProductGroup",
-      "FAQPage",
+      "DaySpa",
       "WebSite",
-      "DaySpa"
+      "ProductGroup",
+      "Organization",
+      "FAQPage",
+      "BreadcrumbList"
     ],
     "canonical_url": "https://www.groupon.com/deals/heavenly-massage-12"
   },
@@ -202,8 +202,8 @@
   "urgency": {
     "has_countdown": true,
     "limited_quantity_text": "Extra $10 off, today only",
-    "selling_fast": true
+    "selling_fast": false
   },
-  "raw_html_length": 1663737,
-  "scraped_at": "2026-04-27T03:29:37.189673+00:00"
+  "raw_html_length": 1655717,
+  "scraped_at": "2026-05-05T02:13:06.229352+00:00"
 }

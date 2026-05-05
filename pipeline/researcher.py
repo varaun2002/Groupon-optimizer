@@ -220,7 +220,7 @@ def research(audit: DealAudit) -> tuple[ResearchData, dict[str, Any]]:
     slug = audit.slug
     title = audit.title or slug
     merchant = audit.merchant_name or slug
-    city = audit.city or "Chicago"
+    city = audit.city or ""
     category = audit.category or "spa"
 
     # Infer service type from title/category keywords
@@ -232,17 +232,19 @@ def research(audit: DealAudit) -> tuple[ResearchData, dict[str, Any]]:
             service_type = kw
             break
 
-    logger.info("Researching %s: service=%r city=%r merchant=%r", slug, service_type, city, merchant)
+    logger.info("Researching %s: service=%r city=%r merchant=%r", slug, service_type, city or "(unknown)", merchant)
 
     all_search_results: list[dict] = []
     sources: list[str] = []
 
     # ── SerpAPI searches ──────────────────────────────────────────────────────
+    # When city is unknown, omit it from queries to avoid citing wrong-geo competitors
+    loc = f" {city}" if city else ""
     queries = [
-        f"{service_type} {city} price",
-        f'"{merchant}" {city}',
-        f"{service_type} {city} discount OR coupon",
-        f"{merchant} {city} reviews",
+        f"{service_type}{loc} price",
+        f'"{merchant}"{loc}',
+        f"{service_type}{loc} discount OR coupon",
+        f"{merchant}{loc} reviews",
     ]
 
     for q in queries:
@@ -298,8 +300,8 @@ def research(audit: DealAudit) -> tuple[ResearchData, dict[str, Any]]:
     else:
         logger.info("Yelp merchant not found for %r in %r", merchant, city)
 
-    # ── Yelp: competitor businesses ───────────────────────────────────────────
-    yelp_competitors = _yelp_competitors(service_type, city, merchant)
+    # ── Yelp: competitor businesses (skip if city unknown — avoids wrong-geo results) ──
+    yelp_competitors = _yelp_competitors(service_type, city, merchant) if city else []
     logger.info("Yelp competitors found: %d", len(yelp_competitors))
 
     # ── Review quotes from SerpAPI snippets (TripAdvisor, Reddit, Google, etc.) ─

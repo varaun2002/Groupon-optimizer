@@ -79,7 +79,7 @@
     }
   ],
   "images": {
-    "count": 50,
+    "count": 47,
     "alt_texts": [
       "Lucky Strike: Two Hours of Bowling + Included Shoe Rentals for 2, 4, or 6 Guests (Up to 72% Off) - Primary Image",
       "Lucky Strike: Two Hours of Bowling + Included Shoe Rentals for 2, 4, or 6 Guests (Up to 72% Off) - Image 2",
@@ -96,47 +96,47 @@
       "Bowling Image 1",
       "Arcade Image 2",
       "Food Image 3",
-      "Up to 69% Off Bowling Deals + Free Shoe Rentals at AMF Bowling",
       "Bowlero Bowling Deals: Up to 72% Off with Free Shoe Rental Included",
+      "Up to 69% Off Bowling Deals + Free Shoe Rentals at AMF Bowling",
       "San Dee Lanes Bowling Deals (Up to 55% Off)",
-      "Bowling Discounted Deals with Shoe Rentals for Up to 6 People",
+      "Bowling Fun at Bowl 360 New Hyde Park – 2 Games + Shoes",
       "Bowling Deals: 2 Games with Shoe Rental for 2, 4, or 6 Players"
     ],
-    "quality_assessment": "Strong image portfolio with 50 total images demonstrating comprehensive coverage. Alt texts include descriptive primary images (7 hero shots with full title), lifestyle context (Bowling, Arcade, Food imagery repeated), and competitive comparison context (AMF Bowling, Bowlero, San Dee Lanes alternatives). However, alt texts are somewhat generic and repetitive rather than benefit-focused descriptions that highlight ambiance or group experiences."
+    "quality_assessment": "Mixed quality signals. 47 total images shows strong visual coverage, but alt_texts reveal generic naming (7 images titled 'Image 2-7' without descriptive content) and several competitor deal references (Bowlero, AMF, Bowl 360) that dilute focus. First 7 alt texts are vague; later ones reference competitors which wastes valuable image real estate."
   },
-  "script_count": 196,
+  "script_count": 200,
   "stylesheet_count": 2,
   "mobile_viewport_meta": "width=device-width",
   "reviews": [
     {
       "rating": null,
-      "text": "Had a great time. Fast service",
+      "text": "Rashmi Top Reviewer Helpful Reviewer 29 ratings | 22 reviews 57 minutes ago My friend and I had an absolute blast playing arcade games!",
+      "date": null,
+      "author": "Rashmi"
+    },
+    {
+      "rating": null,
+      "text": "Awesome and friendly",
       "date": "1 day ago",
-      "author": "Oscar"
+      "author": "Richard"
     },
     {
       "rating": null,
-      "text": "The staff was very friendly. It was a very busy place but still was organized",
+      "text": "I found this groupon to kill some time before catching a movie for date night. Great value!! Me and my girlfriend enjoyed out time here. This was my first time using a groupon but the process was quick and simple. One quick scan and we were settled in to enjoy our bowling experience. Thank you will 100% do again. Read More",
       "date": "3 days ago",
-      "author": "lindsay"
+      "author": "Francisco"
     },
     {
       "rating": null,
-      "text": "It was fun. Bathroom was clean and staff was friendly.",
-      "date": "4 days ago",
-      "author": "Shane"
+      "text": "We were having so much fun that the game seemed to go on for longer than two hours. The staff was helpful and it was easy to make requests. My little brothers had a great time choosing a bowling theme, which was really cool. Read More Video Video",
+      "date": "5 days ago",
+      "author": "Valencia"
     },
     {
       "rating": null,
-      "text": "We came for my granddaughters 16 birthday as a family fun day. We had pizza and brought in a cake it was about 15 of us and we had 3 lanes. Great time I hadn't bowled in years? Read More",
+      "text": "I enjoy this place",
       "date": "6 days ago",
-      "author": "Algie"
-    },
-    {
-      "rating": null,
-      "text": "So much fun! Thank you to Maria! She was lovely!",
-      "date": "6 days ago",
-      "author": "Guest"
+      "author": "Tiffinie"
     }
   ],
   "seo": {
@@ -148,19 +148,19 @@
       "2 Hours Bowling + Free Shoe Rental - For 4",
       "2 Hours Bowling + Free Shoe Rental - For 6",
       "Need To Know Info",
+      "Frequently Asked Questions",
       "About Lucky Strike Bowling",
       "Customer Photos & Videos",
-      "Customer Reviews",
-      "Frequently Asked Questions"
+      "Customer Reviews"
     ],
     "schema_types": [
-      "BreadcrumbList",
-      "Organization",
       "ProductGroup",
-      "FAQPage",
-      "WebSite"
+      "BreadcrumbList",
+      "WebSite",
+      "Organization",
+      "FAQPage"
     ],
-    "canonical_url": "https://www.groupon.com/deals/lucky-strike-corp-2024-bowling-fall"
+    "canonical_url": "https://www.groupon.com/deals/lucky-strike-bowling"
   },
   "trust_signals": {
     "review_count": 4000,
@@ -176,6 +176,6 @@
     "limited_quantity_text": "Limited time",
     "selling_fast": false
   },
-  "raw_html_length": 1559376,
-  "scraped_at": "2026-04-27T04:04:12.561270+00:00"
+  "raw_html_length": 1564439,
+  "scraped_at": "2026-05-05T02:20:45.554850+00:00"
 }

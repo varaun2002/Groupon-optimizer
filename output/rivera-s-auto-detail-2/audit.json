@@ -1,7 +1,7 @@
 {
   "url": "https://www.groupon.com/deals/rivera-s-auto-detail-2",
   "slug": "rivera-s-auto-detail-2",
-  "title": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
+  "title": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off)",
   "subtitle": null,
   "merchant_name": "RIVERA'S Auto Detail",
   "city": "",
@@ -13,26 +13,26 @@
       "deal_price": 108.0,
       "discount_pct": 28.0,
       "savings": 42.0,
-      "coupon_code": "TOPDEALS",
+      "coupon_code": "MOM",
       "coupon_price": 97.2
     },
     {
       "name": "Interior and Exterior Detail for Small SUV, PIckup Truck or Crossover",
-      "original_price": 250.0,
-      "deal_price": 180.0,
-      "discount_pct": 28.0,
-      "savings": 70.0,
-      "coupon_code": "TOPDEALS",
-      "coupon_price": 162.0
+      "original_price": 300.0,
+      "deal_price": 234.0,
+      "discount_pct": 22.0,
+      "savings": 66.0,
+      "coupon_code": "MOM",
+      "coupon_price": 187.2
     },
     {
       "name": "Interior and Exterior Detail for Large SUV, Minivan or Extended Pickup",
-      "original_price": 350.0,
-      "deal_price": 198.0,
-      "discount_pct": 43.0,
-      "savings": 152.0,
-      "coupon_code": "TOPDEALS",
-      "coupon_price": 178.2
+      "original_price": 450.0,
+      "deal_price": 280.0,
+      "discount_pct": 38.0,
+      "savings": 170.0,
+      "coupon_code": "MOM",
+      "coupon_price": 224.0
     }
   ],
   "highlights": [
@@ -45,51 +45,51 @@
   "fine_print": [],
   "faqs": [],
   "images": {
-    "count": 26,
+    "count": 32,
     "alt_texts": [
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Primary Image",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 2",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 3",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 4",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 5",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 6",
-      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off) - Image 7",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Primary Image",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 2",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 3",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 4",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 5",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 6",
+      "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image 7",
       "Daily Views Icon",
       "Daily Views Icon",
+      "Photo from reviewer",
+      "Photo from reviewer",
+      "Photo from reviewer",
       "Up to 51% Off Detailing at Cannon Collision",
       "Up to 41% Off on Exterior & Interior Car Detail",
-      "Interior and Exterior Wash for a Sedan or SUV by Skilled Professionals",
       "Exterior & Interior Car Detail at Royal Touch Hand Wash",
+      "Interior and Exterior Wash for a Sedan or SUV by Skilled Professionals",
+      "Comprehensive Detailing for Pick Up Trucks, SUVs & Sedans",
       "Full Interior or Exterior Car Detail or Both or Ceramic Coating",
-      "Full Interior & Exterior Auto Detailing",
-      "$25 For $50 Toward Car Wash & Detailing Service",
-      "Interior Car Detailing for Sedan, SUV or Large 3-Row SUV",
-      "Get a complete car detailing for coupes, sedans, or larger vehicles",
       "Up to 19% Off Car Detailing at Dr. Detail",
-      "Interior & Exterior Detailing for Sedans, SUVs & Trucks"
+      "Full Interior & Exterior Auto Detailing"
     ],
-    "quality_assessment": "26 images with generic alt_texts that mostly repeat the title rather than describing actual content. Alt texts like 'Image 2', 'Image 3' lack descriptive value. However, count of 26 images demonstrates visual commitment. Quality is compromised by non-descriptive alt_texts that don't highlight vehicle transformation, equipment, or team expertise."
+    "quality_assessment": "32 images total is excellent quantity for product visualization. However, alt_texts are largely generic and repetitive, with most alt_texts simply repeating the title 'Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off) - Image X' rather than describing actual image content. This misses SEO and accessibility optimization opportunities."
   },
-  "script_count": 200,
-  "stylesheet_count": 3,
+  "script_count": 202,
+  "stylesheet_count": 8,
   "mobile_viewport_meta": "width=device-width",
   "reviews": [
     {
       "rating": null,
       "text": "Amazing job! Giovanni coming to my location was super helpful inconvenient. He brought everything needed, so I really didn’t have to worry about anything. He took his time and made sure to do a good job. I really appreciate the work he did. Thank you sooooo much! Read More",
-      "date": "4 days ago",
+      "date": "12 days ago",
       "author": "Sierra"
     },
     {
       "rating": null,
       "text": "Responded quickly for booking. Great Service. Happy Customer",
-      "date": "6 days ago",
+      "date": "14 days ago",
       "author": "Cinddy"
     },
     {
       "rating": null,
       "text": "The original time estimate was 2 hours for full detail of an SUV.  He took a full 4 hours to complete the job, without any additional charge.  The SUV looked great.",
-      "date": "7 days ago",
+      "date": "15 days ago",
       "author": "Martin"
     },
     {
@@ -107,23 +107,23 @@
   ],
   "seo": {
     "meta_title": "RIVERA'S Auto Detail - From $108 | Groupon",
-    "meta_description": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
-    "h1": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 43% Off)",
+    "meta_description": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off)",
+    "h1": "Experience RIVERA'S Auto Detail with Complete Detail for Sedans or Coupes (Up to 38% Off)",
     "h2s": [
       "Interior and Exterior Detail for Sedan or Coupe",
       "Interior and Exterior Detail for Small SUV, PIckup Truck or Crossover",
       "Interior and Exterior Detail for Large SUV, Minivan or Extended Pickup",
       "Need To Know Info",
       "About RIVERA'S Auto Detail",
+      "Customer Photos & Videos",
       "Customer Reviews",
-      "Explore more",
-      "Similar deals"
+      "Explore more"
     ],
     "schema_types": [
-      "BreadcrumbList",
-      "Organization",
+      "WebSite",
       "ProductGroup",
-      "WebSite"
+      "Organization",
+      "BreadcrumbList"
     ],
     "canonical_url": "https://www.groupon.com/deals/rivera-s-auto-detail-2"
   },
@@ -141,6 +141,6 @@
     "limited_quantity_text": "Extra $12 off, today only",
     "selling_fast": false
   },
-  "raw_html_length": 1350622,
-  "scraped_at": "2026-04-27T04:06:20.432821+00:00"
+  "raw_html_length": 1367123,
+  "scraped_at": "2026-05-05T02:18:20.731839+00:00"
 }

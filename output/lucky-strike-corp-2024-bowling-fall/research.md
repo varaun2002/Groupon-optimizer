@@ -4,63 +4,64 @@
 
 | Business | Price | Source |
 |----------|-------|--------|
-| 10 Pin Chicago | $25 | https://www.10pinchicago.com/pricing/ |
-| Kings Dining Entertainment (Lincoln Park) | $19-$26 | https://www.playatkings.com/lincoln-park-bowling-and-games/ |
-| Bowlero Bowling | Not found in research | https://www.groupon.com/local/chicago/bowling |
-| Epic Entertainment Center | Not found in research | https://www.groupon.com/local/chicago/bowling |
+| Bowlero | Not found in research | https://www.bowlero.com/specials |
+| Main Event | $19.95 | https://www.mainevent.com/events/ |
+| Dave and Busters | Not found in research | https://www.daveandbusters.com/us/en/play/bowling |
+| General U.S. Bowling Alley Average | $25-30 | https://www.reddit.com/r/Bowling/comments/173xj5u/what_are_bowling_prices_in_the_us_like/ |
+| Cheyenne, WY Bowling | $7.50 | https://www.yelp.com/search?find_desc=Cheap+Bowling&find_loc=Cheyenne%2C+WY |
 
 
 ## Merchant Direct Price
 
-$20 per person per hour
+Not found in research
 
 ## Merchant Reputation
 
-**Yelp:** 2.7/5 (587 reviews) | **Google:** N/A/5
+**Yelp:** N/A/5 (N/A reviews) | **Google:** N/A/5
 
 ## Review Quotes
 
-> "Had a great time. Fast service" — None★ via groupon
+> "The bowling and activities are fun but the food is not good. Very bland and lacks flavor. But over a good fun experience." — None★ via yelp
 
-> "The staff was very friendly. It was a very busy place but still was organized" — None★ via groupon
+> "The atmosphere was great, the games fun. It's typical for this type of environment, but the execution was well done. No broken equipment of visual defects" — None★ via tripadvisor
 
-> "It was fun. Bathroom was clean and staff was friendly." — None★ via groupon
+> "My friend and I had an absolute blast playing arcade games!" — None★ via groupon
 
-> "We came for my granddaughters 16 birthday as a family fun day. We had pizza and brought in a cake it was about 15 of us and we had 3 lanes. Great time I hadn't bowled in years" — None★ via groupon
+> "I found this groupon to kill some time before catching a movie for date night. Great value!! Me and my girlfriend enjoyed out time here. This was my first time using a groupon but the process was quick and simple. One quick scan and we were settled in to enjoy our bowling experience. Thank you will 100% do again." — None★ via groupon
 
-> "So much fun! Thank you to Maria! She was lovely!" — None★ via groupon
-
-> "Bowling was too pricey for us so we skipped it ($20 per person per hour)" — None★ via tripadvisor
-
-> "This was a very large, upscale alley. Plenty of space for bowling and pool tables (which were free to play). It was pricey ($56 for three games, two people)" — None★ via tripadvisor
+> "We were having so much fun that the game seemed to go on for longer than two hours. The staff was helpful and it was easy to make requests. My little brothers had a great time choosing a bowling theme, which was really cool." — None★ via groupon
 
 
 
 ## Deal Value Assessment
 
-The Groupon deal represents substantial savings vs. Lucky Strike's direct pricing of $20 per person per hour. For the 2-person package at $40 total ($20 per person for 2 hours with free shoes included), the Groupon price undercuts direct pricing. The 4-person option at $64 ($16 per person for 2 hours) and 6-person option at $87 ($14.50 per person for 2 hours) offer progressively better per-person value. Compared to Chicago alternatives: 10 Pin Chicago charges $25-30 per person per hour (without group discounts); Kings Dining Entertainment charges $19-26 per person per hour depending on day/time. The Groupon deal at $14.50-20 per person is competitive or superior to most local options, particularly for groups of 4 or 6. However, walk-in pricing at Lucky Strike varies by location and time, so savings magnitude differs geographically.
+The Groupon deal represents substantial savings. At $40 for 2 people, $64 for 4 people, and $87 for 6 people with included shoe rentals, Lucky Strike Groupon pricing breaks down to approximately $14-20 per person for 2 hours. This compares favorably to: (1) General U.S. bowling averages of $25-30 per hour per person, (2) Main Event's $19.95 for 4 hours of unlimited bowling (lower rate but for larger time commitment), and (3) standard bowling game pricing of $5-6 per game. The Lucky Strike deal's maximum 72% discount on the 6-person option ($87 vs. $310.56 stated retail) is a strong value, though Lucky Strike's direct pricing varies by location and is not publicly listed. The deal is particularly valuable for groups, as per-person costs decrease at larger party sizes. Restriction on Saturday post-6 PM and 24-hour activation window should be considered, but no advance reservation requirement may be advantageous.
 
 ## Category Benchmark
 
-Typical discount range for **Youth Sports**: 50-72% off bowling deals nationally; Chicago-area bowling Groupon deals range from 50-72% off lane time with shoe rental included
+Typical discount range for **Youth Sports**: Bowling deals typically offer 50-72% off retail pricing on Groupon. General U.S. bowling industry pricing suggests hourly rates of $25-30 or $5-6 per game. Lucky Strike's Groupon offer exceeds typical discounts with up to 72% off for the largest group size, representing strong deal positioning within the entertainment bowling category.
 
 ## Content Gaps
 
-- Exact merchant direct pricing by location not confirmed; FAQ claims $14-20 per person but Lucky Strike's own TripAdvisor reviews cite $20 per person per hour and $56 for three games for two people
-- No verified Google or Yelp ratings provided in research; Groupon FAQ references 4.8-star rating from 'nearly 4,000 reviews' but source data incomplete
-- Competitor pricing for Bowlero and Epic Entertainment Center not found; only Groupon deal references exist
-- Shoe rental costs at competitor venues not standardized in research
-- Expiration date conflict: FAQ states 'valid through June 25, 2026' but scraped data timestamp is April 27, 2026
-- No data on Lucky Strike pricing variations by location or time-of-day surcharges beyond Saturday 6pm blackout
+- Lucky Strike merchant direct pricing (walk-in rates) not found—research shows prices vary by location and time but no baseline public rate established
+- Specific Bowlero pricing unavailable; competitor acquisition details mentioned but no current pricing for comparable Bowlero offerings
+- No Dave and Busters exact bowling hourly or per-game rates found in research
+- Lucky Strike Yelp or Google ratings not found in research; Groupon data claims 4.8-star rating from ~4,000 reviews but independent verification absent
+- Expiration date confirmed as June 25, 2026 in FAQ but not independently verified in research
+- Regional pricing variation acknowledgment present but no location-specific pricing data provided
+- Food and beverage pricing not specified, though FAQ notes these are available for separate purchase
 
 ## Sources
 
 - https://www.groupon.com/deals/lucky-strike-corp-2024-bowling-fall
-- https://www.10pinchicago.com/pricing/
-- https://www.playatkings.com/lincoln-park-bowling-and-games/
-- https://www.luckystrikeent.com/location/lucky-strike-chicago/specials
-- https://www.tripadvisor.com/Attraction_Review-g35805-d7983991-Reviews-Lucky_Strike-Chicago_Illinois.html
-- https://www.tripadvisor.com/Attraction_Review-g35805-d563982-Reviews-Lucky_Strike_Downtown_Chicago-Chicago_Illinois.html
-- https://www.reddit.com/r/Bowling/comments/1r9vtw8/opinions_on_lucky_strike_alleys/
-- https://www.groupon.com/local/chicago/bowling
-- https://www.yelp.com/biz/lucky-strike-chicago-chicago-7
+- https://www.yelp.com/search?find_desc=Cheap+Bowling&find_loc=Cheyenne%2C+WY
+- https://www.reddit.com/r/Bowling/comments/173xj5u/what_are_bowling_prices_in_the_us_like/
+- https://www.daveandbusters.com/us/en/play/bowling
+- https://www.bowlero.com/specials
+- https://www.mainevent.com/events/
+- https://www.luckystrikeent.com/lane-reservations
+- https://www.luckystrikeent.com/faqs
+- https://www.bowlerocorp.com/bowlero-corp-to-acquire-lucky-strike
+- https://www.yelp.com/biz/lucky-strike-philadelphia-philadelphia-5
+- https://www.tripadvisor.com/Attraction_Review-g60795-d2665291-Reviews-Lucky_Strike_Philadelphia-Philadelphia_Pennsylvania.html
+- https://www.facebook.com/LuckyStrikePhiladelphia/
